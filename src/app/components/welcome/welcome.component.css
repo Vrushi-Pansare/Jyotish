@@ -1,0 +1,215 @@
+html,
+body {
+    display: flex;
+    color: white;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.background {
+    background-image: url('../../../assets/images/146501.png');
+    color: white;
+    background-attachment: fixed;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    position: relative;
+    opacity: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.background h1 {
+
+    font-family: Inter;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 99px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    text-decoration: none;
+    margin-top: 150px;
+    display: block;
+
+
+}
+
+.the-text {
+    font-family: Inter;
+    font-size: 90px;
+    font-weight: 400;
+    line-height: 99px;
+    text-align: center;
+    margin-right: 20px;
+}
+
+
+.jyotish-connect {
+    font-family: Montserrat;
+    font-size: 90px;
+    font-weight: 600;
+    line-height: 99px;
+    text-align: center;
+    text-underline-position: from-font;
+
+}
+
+.background p {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24.38px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 10px;
+
+}
+
+.btn-g {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 90px;
+    border-radius: 200px;
+    text-decoration: none;
+    font-weight: 500px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    margin-top: 40px;
+}
+
+.container .batt {
+    background-color: transparent;
+    color: orange;
+    border-color: orange;
+    Width: Hug (337px);
+    Height: Hug (80px);
+    top: 656px;
+    left: 986px;
+    border: 2px solid #ff9900;
+    padding: 20px 40px 24px 40px;
+    border-radius: 1000px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.26px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.container .btn-p {
+    background-color: orange;
+    color: black;
+    border: 2px solid orange;
+    width: Hug (337px)px;
+    height: Hug (70px)px;
+    top: 656px;
+    left: 986px;
+    padding: 20px 40px 24px 40px;
+    border-radius: 1000px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.26px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+
+}
+
+.btn-g i {
+    margin-right: 20px;
+}
+
+.ban:hover {
+    background-color: #ff9900;
+    color: #0a0a23;
+}
+
+.button-primary {
+    background-color: #ff9900;
+    color: #0a0a23;
+    border: none;
+}
+
+.but-p:hover {
+    background-color: #e68a00;
+}
+
+@media (max-width: 768px) {
+    .background h1 {
+        font-size: 8vw;
+        /* Adjust for smaller screens */
+    }
+
+    .background h2.the-text {
+        font-size: 7vw;
+        /* Adjust for smaller screens */
+    }
+
+    .background p {
+        font-size: 3vw;
+        /* Adjust for smaller screens */
+    }
+
+    .button {
+        font-size: 3vw;
+        /* Adjust for smaller screens */
+    }
+}
+
+
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .background {
+        height: 100vh;
+        /* Full height for mobile */
+    }
+
+    .background h1 {
+        font-size: 8vw;
+        /* Adjust for smaller screens */
+    }
+
+    .background h2.the-text {
+        font-size: 7vw;
+        /* Adjust for smaller screens */
+    }
+
+    .background p {
+        font-size: 4vw;
+        /* Adjust for smaller screens */
+    }
+
+    .button {
+        font-size: 4vw;
+        /* Adjust for smaller screens */
+        width: 80%;
+        /* Full width for buttons on mobile */
+    }
+}

@@ -1,0 +1,40 @@
+/* Navbar styles */
+.nav {width: 1920px;
+    height: 80px;
+    gap: 0px;
+    opacity: 0px;
+    background-color: #3e72a5; /* This is a light gray color similar to bg-body-tertiary */
+}
+
+.navbar-brand {
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+
+
+.nav-item{
+ text-align: right;
+}
+
+
+.btn {
+    margin-left: auto;
+    min-width: 80px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 991.98px) {
+    .navbar-nav-custom {
+        margin: 0;
+        padding: 1rem 0;
+    }
+    
+    .nav-item-custom {
+        margin: 0.25rem 0;
+    }
+    
+    .login-btn-custom {
+        margin: 1rem 0;
+    }
+}
