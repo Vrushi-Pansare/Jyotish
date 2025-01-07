@@ -1,15 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
 /* You can add global styles to this file, and also import other style files */
 
-body {
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    margin-right: 0px;
-    margin-left: 0;
+/* Debug Styles - Commented out by default */
+/* * {
+  background: rgb(0 100 0 / 0.1) !important;
+  outline: 1px solid limegreen !important;
+} */
 
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
 }
 
-.container {
-    margin: 0px;
-    margin: 0px;
+html,
+body {
+  height: 100%;
+  font-family: "IBM Plex Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
