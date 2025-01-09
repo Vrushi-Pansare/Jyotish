@@ -1,0 +1,45 @@
+.main-container {
+    width: 100%;
+    padding: 50px;
+}
+
+.titel h1 {
+    font-family: Montserrat;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58.51px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #1E3A8A;
+
+}
+
+.button{
+    gap: 70px;
+}
+.button p {
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 400;
+line-height: 20px;
+text-align: left;
+}  
+
+.button .btn {
+    width: Hug (100px)px;
+    height: Hug (37px)px;
+    padding: 10.5px 20px 8.5px 20px;
+    border-radius: 1000px;
+    opacity: 0px;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+    margin-bottom: 30px;
+    margin-left: 100px;
+    background: linear-gradient(90deg, #FACC15 0%, #F97316 100%);
+
+
+
+}

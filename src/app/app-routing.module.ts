@@ -5,6 +5,7 @@ import { LoginComponent } from './components/login/login.component';
 import { AboutComponent } from './pages/about/about.component';
 import { WelcomeComponent } from './components/welcome/welcome.component';
 import { OtpVerificationComponent } from './components/otp-verification/otp-verification.component';
+import { AstrologerComponent } from './components/astrologer/astrologer.component';
 
 
 const routes: Routes = [
@@ -12,7 +13,8 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: 'otp', component: OtpVerificationComponent},
   {path: 'About', component: AboutComponent},
-  {path: 'welcome', component: WelcomeComponent}
+  {path: 'welcome', component: WelcomeComponent},
+  {path: 'astrologer', component: AstrologerComponent}
 ];
 
 @NgModule({

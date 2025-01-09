@@ -10,6 +10,7 @@ import { WelcomeComponent } from './components/welcome/welcome.component';
 import { LoginComponent } from './components/login/login.component';
 import { AboutComponent } from './pages/about/about.component';
 import { OtpVerificationComponent } from './components/otp-verification/otp-verification.component';
+import { AstrologerComponent } from './components/astrologer/astrologer.component';
 
 
 @NgModule({
@@ -22,6 +23,7 @@ import { OtpVerificationComponent } from './components/otp-verification/otp-veri
     LoginComponent,
     AboutComponent,
     OtpVerificationComponent,
+    AstrologerComponent,
 
   ],
   imports: [

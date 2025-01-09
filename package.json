@@ -22,6 +22,7 @@
     "@fullhuman/postcss-purgecss": "^7.0.2",
     "bootstrap": "^5.3.3",
     "rxjs": "~7.8.0",
+    "swiper": "^11.2.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.15.0"
   },
