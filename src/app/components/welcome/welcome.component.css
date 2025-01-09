@@ -1,11 +1,66 @@
 .main-container {
-  text-align: center;
   position: relative;
   width: 100vw;
   height: 100%;
 }
 
-.card-container {
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 340px;
+}
+.header h1{
+font-family: Montserrat;
+font-size: 24px;
+font-weight: 500;
+line-height: 29.26px;
+text-align: left;
+margin-right: 100px;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+.nav{
+
+  margin-left: 120px;
+}
+
+.navbar-nav{
+  list-style: none;
+  display: flex;
+  padding: 0;
+  flex-direction: row;
+
+}
+.nav-item {
+  margin: 0 15px; /* Space between navigation items */
+}
+
+.nav-link {
+  color: white; /* White text color for links */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.nav-link:hover {
+  color: #ff9900; /* Change color on hover */
+}
+
+.login-button {
+  text-decoration: none;
+  color: black;
+width: Hug (348px)px;
+height: Hug (28px)px;
+padding: 10px 20px;
+border-radius: 32px;
+margin-left: 10px;
+background: linear-gradient(90deg, #FFB84D 0%, #FF8C00 100%);
+}
+
+/* .card-container {
   background: #0a0a23;
   color: white;
   width: 90%;
@@ -17,7 +72,7 @@
 .card-image {
   width: 100%;
   object-fit: cover;
-}
+} */
 
 .background {
   background-image: url("../../../assets/images/32e58779624e6f67eea10fed5eb74e5a.jpeg");
@@ -37,27 +92,28 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top: 0;
 }
 
-.background h1 {
-  font-family: Inter;
+.background h3 {
   font-size: 90px;
   font-weight: 400;
+  font-family: 'Montserrat', sans-serif;
   line-height: 99px;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   text-decoration: none;
-  margin-top: 150px;
+  margin-top: -200px;
   display: block;
 }
 
 .the-text {
-  font-family: Inter;
   font-size: 90px;
   font-weight: 400;
   line-height: 99px;
   text-align: center;
+  font-family: 'Montserrat', sans-serif;
   margin-right: 20px;
 }
 
@@ -78,31 +134,32 @@
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-  margin-top: 10px;
+  margin-bottom: 50px;
 }
-
-.btn-g {
+.btn-g  {
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 30px 90px;
+  padding: 10px 50px;
   border-radius: 200px;
-  text-decoration: none;
   font-weight: 500px;
   font-family: Montserrat;
   font-size: 24px;
   font-weight: 500;
-  margin-top: 40px;
+  margin-bottom: 100px;
+  
 }
 
-.container .batt {
+.btn-g a{
+  text-decoration: none; /* Remove underline */
+}
+
+.main-container .batt {
   background-color: transparent;
   color: orange;
   border-color: orange;
   width: Hug (337px);
   height: Hug (80px);
-  top: 656px;
-  left: 986px;
   border: 2px solid #ff9900;
   padding: 20px 40px 24px 40px;
   border-radius: 1000px;
@@ -112,19 +169,14 @@
   font-size: 24px;
   font-weight: 500;
   line-height: 29.26px;
-  text-align: left;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
 }
 
-.container .btn-p {
+.main-container .btn-p {
   background-color: orange;
   color: black;
   border: 2px solid orange;
   width: Hug (337px) px;
   height: Hug (70px) px;
-  top: 656px;
-  left: 986px;
   padding: 20px 40px 24px 40px;
   border-radius: 1000px;
   border: 1px 0px 0px 0px;
@@ -134,28 +186,9 @@
   font-weight: 500;
   line-height: 29.26px;
   text-align: left;
-  text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
 
-.btn-g i {
-  margin-right: 20px;
-}
-
-.ban:hover {
-  background-color: #ff9900;
-  color: #0a0a23;
-}
-
-.button-primary {
-  background-color: #ff9900;
-  color: #0a0a23;
-  border: none;
-}
-
-.but-p:hover {
-  background-color: #e68a00;
-}
 
 @media (max-width: 768px) {
   .text-content {
@@ -177,7 +210,7 @@
     /* Adjust for smaller screens */
   }
 
-  .button {
+  .btn-g {
     font-size: 3vw;
     /* Adjust for smaller screens */
   }
@@ -185,6 +218,27 @@
 
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
+
+  .header {
+    flex-direction: column; /* Stack items vertically */
+    align-items: flex-start; /* Align items to the start */
+}
+
+.navbar-nav {
+    flex-direction: column; /* Stack nav items vertically */
+    width: 100%; /* Full width for nav */
+    padding: 0; /* Remove padding */
+}
+
+.nav-item {
+    margin: 10px 0; /* Space between nav items */
+}
+
+.login-button {
+    width: 100%; /* Full width for login button */
+    margin-top: 10px; /* Space above the button */
+}
+
   .background {
     height: 100vh;
     /* Full height for mobile */
@@ -205,10 +259,12 @@
     /* Adjust for smaller screens */
   }
 
-  .button {
+  .btn-g{
     font-size: 4vw;
     /* Adjust for smaller screens */
     width: 80%;
     /* Full width for buttons on mobile */
   }
 }
+
+

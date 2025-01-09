@@ -1,0 +1,26 @@
+<div class="main-container">
+    <div class="header-container"style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 20px;">
+        <h1>Continue with Mobile No.</h1>
+    <button class="button" (click)="goHome()">
+        <span class="X"></span>
+        <span class="Y"></span>
+        <div class="close">Close</div>
+    </button>
+</div>
+    
+    <h2>Let's <span>Get Started!</span></h2>
+    <div class="info-row" style=" flex-direction: column; margin-bottom: 40px;">
+        <p>Effortlessly access your personalized astrology insights. </p>
+        <p>Securely log in with your mobile number and OTP for instant account access.</p>
+    </div>
+        <div class="input-group">
+            <span>+91</span>
+            <input type="text" placeholder="Enter mobile number">
+        </div>
+        <div class="checkbox-group">
+            <input type="checkbox" id="terms">
+            <label for="terms">By Signing up, you agree to our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a></label>
+        </div>
+        <button class="btn" routerLink="/otp" >Send OTP</button>
+</div>
+

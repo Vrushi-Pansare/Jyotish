@@ -1,6 +1,34 @@
 <div class="main-container">
   <div class="background">
-    <h1>Welcome To</h1>
+    <!-- header -->
+    <header class="header">
+      <h1 class="header-title">Jyotish Connect</h1>
+      <nav class="nav">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/About">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Our Astrologers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Daily Horoscope</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Free Kundli</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Quotes of the Day</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Testimonials</a>
+          </li>
+        </ul>
+      </nav>
+      <a class="login-button" [routerLink]="['/login']">Login</a> <!-- Login Button -->
+    </header>
+    <!-- welcome page-->
+    <h3>Welcome To</h3>
     <h2>
       <span class="the-text">The</span>
       <span class="jyotish-connect">Jyotish Connect</span>
@@ -10,30 +38,8 @@
       your cosmic path...
     </p>
     <div class="btn-g">
-      <a class="batt"><i class="fas fa-comments"> Talk with Astrologer</i> </a>
-      <a class="btn-p"><i class="fas fa-phone"> Talk to Astrologer</i> </a>
-    </div>
-  </div>
-</div>
-
-<div class="card-container">
-  <!-- card -->
-
-  <div class="row">
-    <div class="col-md-6">
-      <img
-        class="card-image"
-        src="https://media.istockphoto.com/id/1443628665/photo/adult-writing-in-the-classroom.jpg?s=1024x1024&w=is&k=20&c=WZ9Zv8MPhqo4F4nRhkqGaK9uohN6Z7PE2aXfZyxDdoc="
-        alt="astrologer"
-      />
-    </div>
-    <div class="col-md-6">
-      <div class="text-content">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia
-        impedit alias saepe maiores earum est expedita, vel beatae cumque magni
-        voluptate eos voluptatibus eligendi quas praesentium excepturi?
-        Sapiente, eveniet officiis.
-      </div>
+      <a class="batt"> Chat with Astrologer </a>
+      <a class="btn-p"> Talk to Astrologer </a>
     </div>
   </div>
 </div>

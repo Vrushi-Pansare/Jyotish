@@ -1,0 +1,260 @@
+.main-container {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    padding: 50px 300px;
+    margin: 0px;
+    justify-content: flex-end;
+    
+}
+
+.button {
+    position: relative;
+    background: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 26.67px;
+    height: 26.67px;
+    border: 1.5px solid #141212;
+    opacity: 1;
+    margin-right: 200px;
+    margin-bottom: 50px;
+
+}
+
+.X {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    width: 0.6em;
+    height: 0.6px;
+    background-color: #141212;
+    transform: rotate(45deg);
+
+}
+
+.Y {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    width: 0.6em;
+    height: 0.6px;
+    background-color: #141212;
+    transform: rotate(-45deg);
+}
+
+.close {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: -40%;
+    left: 70%;
+    width: 1em;
+    height: 1em;
+    font-size: 16px;
+    background-color: rgb(254, 255, 225);
+    color: #000;
+    border: 0.5px solid #000;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.button:hover>.close {
+    animation: close 0.2s forwards 1.25s;
+}
+
+@keyframes close {
+    100% {
+        opacity: 1;
+    }
+}
+
+
+
+.main-container h1 {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 49px;
+    text-align: left;
+    margin: 0;
+    text-decoration-skip-ink: none;
+    margin-bottom: 50px;
+
+}
+
+
+.main-container h2 {
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #1E3A8A;
+}
+
+.main-container h2 span {
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.main-container p {
+    font-family: Montserrat;
+    flex-direction: column;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    text-align: left;
+    margin-bottom: 40px;
+    margin: 0;
+    padding: 0; 
+}
+
+.input-group {
+    display: flex;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 30px;
+    padding: 10px 20px;
+    margin-bottom: 20px;
+    width: 400px;
+
+
+}
+
+.input-group span {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-right: 10px;
+
+}
+
+.input-group input {
+    border: none;
+    background: none;
+    outline: none;
+    font-size: 16px;
+    margin-left: 10px;
+    flex: 1;
+
+}
+
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.checkbox-group input {
+    margin-right: 10px;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: 2px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.checkbox-group label {
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.checkbox-group a {
+    color: #1E3A8A;
+    text-decoration: none;
+}
+
+
+.btn {
+    width: 400px;
+    height: 56px;
+    top: 313px;
+    left: 40px;
+    gap: 0px;
+    border-radius: 100px;
+    opacity: 0.05px;
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.26px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    background: linear-gradient(90deg, #FACC15 0%, #F97316 100%);
+}
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 20px;
+    }
+
+    .button {
+        margin-right: 0;
+        margin-bottom: 20px; 
+    }
+
+    .header-row {
+        flex-direction: column; 
+        align-items: flex-start; 
+    }
+
+    .main-container h1 {
+        font-size: 20px; 
+        margin-bottom: 20px; 
+    }
+
+    .main-container h2 {
+        font-size: 24px; 
+    }
+
+    .main-container p {
+        font-size: 14px;
+        line-height: 18px; 
+    }
+
+    .input-group {
+        width: 100%; 
+        margin-bottom: 15px; 
+    }
+
+    .btn {
+        width: 100%; 
+        height: 50px; 
+        font-size: 20px; 
+    }
+
+    .checkbox-group {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .checkbox-group label {
+        font-size: 12px; 
+    }
+}

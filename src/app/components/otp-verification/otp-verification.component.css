@@ -1,0 +1,256 @@
+.con {
+    position: fixed;
+    width: 100vw;
+    height: 100%;
+    margin: 0px;
+    padding: 50px 400px;
+    justify-content: flex-end;
+
+}
+
+.button {
+    position: relative;
+    background: none;
+    text-align: right;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-left: 400px;
+    width: 26.67px;
+    height: 26.67px;
+    border: 1.5px solid #141212;
+    opacity: 1;
+    margin-bottom: 50px;
+
+}
+
+.X {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    width: 0.6em;
+    height: 0.6px;
+    background-color: #141212;
+    transform: rotate(45deg);
+
+}
+
+.Y {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 33%;
+    width: 0.6em;
+    height: 0.6px;
+    background-color: #141212;
+    transform: rotate(-45deg);
+}
+
+.close {
+    position: absolute;
+    display: flex;
+    text-align: right;
+    bottom: -40%;
+    left: 70%;
+    width: 1em;
+    height: 1em;
+    font-size: 16px;
+    background-color: rgb(254, 255, 225);
+    color: #000;
+    border: 0.5px solid #000;
+    pointer-events: none;
+    opacity: 0;
+}
+
+.button:hover>.close {
+    animation: close 0.2s forwards 1.25s;
+}
+
+.header-container h2 {
+    font-family: Montserrat;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #1E3A8A;
+    margin-bottom: 20px;
+}
+
+.header-container h2 span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.header-container p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 25.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 30px;
+}
+
+.header-container p span {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 25.6px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #1A1A1A;
+}
+
+.otp-inputs {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.otp-inputs input {
+    width: 56px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 20px;
+    border-color: #1E3A8A;
+}
+
+
+.timer-resend {
+    display: flex;
+    gap: 90px;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.timer {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: #000000DE;
+}
+
+.resend {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+.resend span {
+    color: #ff6f00;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.verify-btn {
+    background: linear-gradient(90deg, #FACC15 0%, #F97316 100%);
+    border: none;
+    padding: 15px;
+    border-radius: 32px;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.26px;
+    width: 70%;
+    margin-bottom: 20px;
+}
+
+
+.edit-no {
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.38px;
+    margin-left: 70px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-top: 10px;
+}
+
+/* small screen Responsiveness */
+@media (max-width: 768px) {
+    .con {
+        padding: 20px; 
+    }
+
+    .button {
+        margin-left: 0;
+        margin-bottom: 20px; 
+    }
+
+    .header-container h2 {
+        font-size: 24px; 
+    }
+
+    .header-container p {
+        font-size: 14px; 
+    }
+
+    .otp-inputs input {
+        width: 40px; 
+        height: 40px; 
+        font-size: 18px; 
+    }
+
+    .timer-resend {
+        flex-direction: column; 
+        gap: 20px;     }
+
+    .verify-btn {
+        width: 90%;
+    }
+
+    .edit-no {
+        margin-left: 0;
+        text-align: center; 
+    }
+}
+
+@media (max-width: 480px) {
+    .header-container h2 {
+        font-size: 20px;
+    }
+
+    .header-container p {
+        font-size: 12px; 
+    }
+
+    .button {
+        width: 20px; 
+        height: 20px; 
+    }
+
+    .X, .Y {
+        width: 0.4em; 
+        height: 0.4px; 
+    }
+
+    .close {
+        font-size: 14px; 
+    }
+
+    .verify-btn {
+        padding: 10px; 
+        font-size: 14px; 
+    }
+}
