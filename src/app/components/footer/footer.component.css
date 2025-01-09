@@ -1,0 +1,109 @@
+.card-container {
+    width: 100%;
+    height: 40%;
+    padding: 50px;
+    background-image: url('https://s3-alpha-sig.figma.com/img/e46d/60f7/adf737cefaaeafda608b861e429d9b91?Expires=1737331200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=l~1fmaJlygNvRaCXlS2YIDGofKJ0acqnVIySLEFFiVUwPQMCkAQw8Uv8yRH71l15uBfuvfkEqtWoJJG9CrP9Wn4mNUX3Kz8OmPWhAwRokCK7eZMGrO~DFtfuJGCSj-uyiRuwNdSF9lC9hNPKOsKXMyAkA9HkYBw4nQeEGDF6rHtVBAgzRk~O4Sh~1LE8L~KDX9wfJ7JJNmKrcECoDw9RjFWMKfimwzNYLzQSur~21ynORpVEqhvyioyCnD0z03c4I9VDPEpKphag1-adk1Msaj5unIFHtXSMF-kMU6AC8E9CLhrGem0nY5oKp4sy2txF-QwcgK9S-Oeq~519Xc6LyA__');
+}
+
+.row {
+    display: flex;
+    text-align: center;
+    color: aliceblue;
+}
+
+
+.hedar h1 {
+    font-family: Montserrat;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29.26px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.hedar p {
+    font-family: Poppins;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.quick {
+    margin-left: 100px;
+
+}
+
+.quick h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-align: left;
+
+}
+
+.quick a {
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 24.38px;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: white;
+}
+
+.Contact {
+    text-align: left;
+}
+
+.Contact h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    text-align: left;
+}
+
+.Contact p {
+    font-family: Montserrat;
+    font-size: 20px;
+    line-height: 24.38px;
+    text-align: left;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.subscribe {
+    text-align: left;
+    margin-right: 30px;
+}
+
+.subscribe h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 5px;
+    text-align: left;
+}
+
+.subscribe input {
+    border-radius: 50px;
+    border-color: #E2E2E2;
+    background-color: transparent;
+}
+
+.subscribe-container {
+    display: flex;
+    gap: 10px;
+}
+
+.subscribe-container .btn {
+    border-radius: 50px;
+    background: linear-gradient(90deg, #FACC15 0%, #F97316 100%);
+
+}
