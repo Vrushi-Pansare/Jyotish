@@ -10,22 +10,15 @@
   align-items: center;
   padding: 0;
   margin: 0;
-  margin-bottom: 340px;
+  margin-bottom: 300px;
 }
-.header h1{
-font-family: Montserrat;
-font-size: 24px;
-font-weight: 500;
-line-height: 29.26px;
-text-align: left;
-margin-right: 100px;
-text-underline-position: from-font;
-text-decoration-skip-ink: none;
+.header .logo img{
+opacity: 1;
 
 }
 .nav{
 
-  margin-left: 120px;
+  margin-left: 230px;
 }
 
 .navbar-nav{

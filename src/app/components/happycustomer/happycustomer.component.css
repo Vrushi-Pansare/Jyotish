@@ -1,0 +1,80 @@
+.main-container {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background: linear-gradient(280.09deg, #F97316 -1.11%, #FACC15 100%);
+}
+
+.hedar h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 50.51px;
+    text-align: center;
+    color: white;
+    margin-top: 30px;
+}
+
+.card-container {
+    margin-top: 50px;
+}
+
+.card {
+    padding: 10px;
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+    opacity: 0px;
+    box-shadow: 0px 2px 8px 0px #0000000D;
+
+
+}
+
+.card img {
+    width: 56.27px;
+    height: 37.13px;
+    top: 3772px;
+    left: 1296px;
+    padding: 0px;
+    gap: 0px;
+    opacity: 0.3px;
+    margin-top: 20px;
+}
+
+.card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 200;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 50px;
+}
+
+
+.cardimage img {
+    width: 48px;
+    height: 48px;
+    top: 4018px;
+    left: 1304px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.cardimage p {
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #1E3A8A;
+
+}
+
+.cardimage span img {
+    width: 80px;
+    height: 12px;
+    gap: 0px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
