@@ -1,0 +1,106 @@
+.main-container {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+.main-content {
+    padding: 50px;
+    justify-content: center;
+    /* Center horizontally */
+    align-items: center;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.main-content h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58.51px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(30, 58, 138, 1);
+    margin-bottom: 20px;
+}
+
+.main-content p {
+    font-family: 'Montserrat', sans-serif;
+font-size: 20px;
+font-weight: 400;
+line-height: 28px;
+text-align: center;
+text-underline-position: from-font;
+text-decoration-skip-ink: none;
+
+}
+
+.section .card-container{
+    padding: 50px;
+}
+
+.section .card {
+    padding: 10px;
+    width: 100%;
+    height: 90%;
+    border-radius: 20px;
+    opacity: 0px;
+    box-shadow: 0px 2px 8px 0px #0000000D;
+}
+
+.section .card img {
+    width: 56.27px;
+    height: 37.13px;
+    top: 3772px;
+    left: 1296px;
+    padding: 0px;
+    gap: 0px;
+    opacity: 0.3px;
+    margin-top: 20px;
+}
+
+.section .card p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    font-weight: 200;
+    line-height: 20px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 50px;
+}
+
+
+.section .cardimage img {
+    width: 48px;
+    height: 48px;
+    top: 4018px;
+    left: 1304px;
+    gap: 0px;
+    opacity: 0px;
+}
+
+.section .cardimage p {
+    margin-top: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    color: #1E3A8A;
+
+}
+
+.section .cardimage span img {
+    width: 80px;
+    height: 12px;
+    gap: 0px;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+
+.pages {
+    padding: 0px;
+    margin: 0px;
+}

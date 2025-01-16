@@ -1,0 +1,268 @@
+.main-container {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+.main {
+    margin-top: 100px;
+    text-align: center;
+    padding: 50px;
+}
+
+.main h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 58.51px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(30, 58, 138, 1);
+
+}
+
+.main p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    width: 80%;
+    line-height: 28px;
+    margin-left: 100px;
+}
+
+.main-content {
+    padding: 50px;
+    gap: 50px;
+    margin-top: -40px;
+}
+
+.main-content img {
+    height: 120%;
+    width: 50%;
+}
+
+.form-container {
+    display: column;
+    border-radius: 20px;
+    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.05);
+
+}
+
+.form-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 34.13px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(30, 58, 138, 1);
+
+}
+
+.form-container p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.form-container .name p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 10px
+}
+
+.form-container .name input {
+    width: 250px;
+    height: 40px;
+    gap: 0px;
+    border-radius: 100px;
+    opacity: 0.05px;
+    font-size: 14px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    border: none;
+    background-color: rgb(243, 240, 240);
+}
+
+.form-container .brith p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 10px
+}
+
+.form-container .brith input {
+    width: 250px;
+    height: 40px;
+    gap: 0px;
+    border-radius: 100px;
+    opacity: 0.05px;
+    font-size: 14px;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgb(243, 240, 240);
+}
+
+.form-container .date p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 10px
+}
+
+.form-container .date input {
+    width: 250px;
+    height: 40px;
+    gap: 0px;
+    border-radius: 100px;
+    opacity: 0.05px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(243, 240, 240);
+}
+
+
+.form-container .time p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17.07px;
+    text-align: left;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin-bottom: 10px
+}
+
+.form-container .time input {
+    width: 250px;
+    height: 40px;
+    gap: 0px;
+    border-radius: 100px;
+    opacity: 0.05px;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(243, 240, 240);
+}
+
+.main-container label input {
+    width: 80px;
+    height: 40px;
+    top: 826px;
+    left: 883px;
+    padding: 5px;
+    gap: 20px;
+    border-radius: 1000px;
+    border: 1px 0px 0px 0px;
+    opacity: 0px;
+    text-align: center;
+    margin-left: 10px;
+    border: none;
+    box-shadow: inset;
+
+}
+
+.main-container label input:hover {
+    background-color: sandybrown;
+}
+
+.btn {
+    width: 50%;
+    height: 50px;
+    background: linear-gradient(90deg, rgba(250, 204, 21, 0.1) 0%, rgba(249, 115, 22, 0.1) 100%);
+    border-radius: 100px;
+    margin-top: 30px;
+    background: linear-gradient(90deg, #FFB84D 0%, #FF8C00 100%);
+
+}
+.header{
+    padding: 50px;
+}
+
+
+.nav a {
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    color: rgb(103, 102, 102);
+    padding: 20px;
+    text-decoration: none;
+    margin-bottom: 50px;
+
+}
+.nav a:hover {
+    color: black;
+    text-decoration: underline;
+}
+
+.card-container p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+
+}
+
+.text {
+    margin-top: 10px;
+    padding: 50px;
+}
+
+.text h3 {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 40.2px;
+    text-align: left;
+}
+
+.text button {
+
+    width: Hug (423px)px;
+    height: Hug (90px)px;
+    margin-top: 20px;
+    gap: 10px;
+    text-align: center;
+    border-radius: 1000px;
+    opacity: 0px;
+    font-size: 12px;
+    background: linear-gradient(90deg, #FFB84D 0%, #FF8C00 100%);
+
+}
+
+
+.main-section {
+    padding: 0;
+    margin: 0;
+}

@@ -1,0 +1,25 @@
+.language-switcher{
+    width: 100%;
+    margin-top: -60px;
+    justify-content: center;
+}
+
+
+.language-switcher button{
+    width: 110px;
+height: 30%;
+top: 506px;
+left: 296px;
+padding: 17px 24px 17px 24px;
+gap: 10px;
+border-radius: 1000px ;
+opacity: 0px;
+border: none;
+background-color: white;
+
+}
+
+.language-switcher button:hover{
+    background: linear-gradient(90deg, rgba(250, 204, 21, 0.1) 0%, rgba(249, 115, 22, 0.1) 100%);
+
+}

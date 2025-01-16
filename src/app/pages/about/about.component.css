@@ -2,20 +2,18 @@
     width: 100%;
     margin: 0%;
     padding: 0%;
-    height: 80%;
+
 }
 
-
-
 .header {
-    margin: 60px;
+    padding: 50px;
 }
 
 .header h1 {
     font-family: 'Inter', sans-serif;
-    font-size: 48px;
+    font-size: 35px;
     font-weight: 400;
-    line-height: 58.51px;
+    line-height: 1.5;
     text-align: center;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -29,7 +27,7 @@
 }
 
 .card-container h2 {
-    font-family: Montserrat;
+    font-family: 'Inter', sans-serif;
     font-size: 30px;
     font-weight: 500;
     line-height: 39.01px;
@@ -40,7 +38,7 @@
 }
 
 .card-container p {
-    font-family: monospace;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 200;
     line-height: 25px;
@@ -59,7 +57,7 @@
 }
 
 .contenar h6 {
-    font-family: Montserrat;
+    font-family: 'Inter', sans-serif;
     color: #1E3A8A;
     font-size: 40px;
     font-weight: 400;
@@ -70,7 +68,7 @@
 }
 
 .contenar h1 {
-    font-family: Montserrat;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 20.
@@ -82,7 +80,7 @@
 }
 
 .header h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 48px;
     font-weight: 400;
     line-height: 58.51px;
@@ -101,7 +99,7 @@
 }
 
 .card-container h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 30px;
     font-weight: 500;
     line-height: 39.01px;
@@ -110,7 +108,7 @@
 }
 
 .card-container p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 200;
     line-height: 25px;
@@ -126,16 +124,16 @@
 }
 
 .main h6 {
-    font-family: Montserrat;
+    font-family: 'Inter', sans-serif;
     color: #1E3A8A;
-    font-size: 40px;
+    font-size: 35px;
     font-weight: 400;
     line-height: 50.51px;
     margin-top: 50px;
 }
 
 .main h1 {
-    font-family: Montserrat;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 20.13px;
@@ -145,10 +143,10 @@
 }
 
 .main p {
-    font-family: Montserrat;
-    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 1.5;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
@@ -162,69 +160,83 @@
     border-radius: 25px 0 0 0;
     opacity: 1; 
     position: relative; 
+    margin-bottom: 30%;
+
 
 }
 
-/* small screen */
-@media (max-width: 768px) {
-    .header {
-        margin: 30px 0;
-    }
 
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
     .header h1 {
-        font-size: 32px;
-        line-height: 40px;
-    }
-
-    .card-container {
-        margin: 15px 0;
-        padding: 10px;
+        font-size: 36px; /* Adjust heading size for medium screens */
+        line-height: 44px;
+        margin-top: 40px;
     }
 
     .card-container h2 {
-        font-size: 24px;
+        font-size: 28px; /* Adjust card heading size for medium screens */
+        line-height: 36px;
+    }
+
+    .card-container p {
+        font-size: 15px; /* Adjust paragraph size for medium screens */
+        line-height: 22px;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 30px; /* Reduce padding for smaller screens */
+    }
+
+    .header h1 {
+        font-size: 30px; /* Adjust heading size for small screens */
+        line-height: 1.5;
+        margin-top: 50px;
+    }
+
+    .card-container {
+        margin: 15px 0; /* Reduce margin for smaller screens */
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    .card-container h2 {
+        font-size: 24px; /* Adjust card heading size for small screens */
         line-height: 30px;
     }
 
     .card-container p {
-        font-size: 14px;
-        line-height: 20px.13px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        color: #1E3A8A;
-
-
-    }
-}
-
-/* small screen */
-@media (max-width: 768px) {
-    .header {
-        margin: 30px;
-
-    }
-
-    .header h1 {
-        font-size: 32px;
-        line-height: 40px;
-
-    }
-
-    .card-container {
-        margin: 15px;
-        padding: 10px;
-    }
-
-    .card-container h2 {
-        font-size: 24px;
-        line-height: 30px;
-        text-align: left;
-    }
-
-    .card-container p {
-        font-size: 14px;
+        font-size: 14px; /* Adjust paragraph size for small screens */
         line-height: 20px;
-        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 28px; /* Further adjust heading size for very small screens */
+        line-height: 36px;
+    }
+
+    .card-container h2 {
+        font-size: 22px; /* Further adjust card heading size for very small screens */
+        line-height: 28px;
+    }
+
+    .card-container p {
+        font-size: 12px; /* Further adjust paragraph size for very small screens */
+        line-height: 18px;
+    }
+
+    .main h6 {
+        font-size: 30px; /* Adjust h6 size for very small screens */
+    }
+
+    .main h1 {
+        font-size: 18px; /* Adjust h1 size for very small screens */
+    }
+
+    .main p {
+        font-size: 16px; /* Adjust paragraph size for very small screens */
     }
 }

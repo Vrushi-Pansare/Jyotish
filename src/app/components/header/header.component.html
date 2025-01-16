@@ -1,34 +1,28 @@
-<div class="nav" style="background-color: linear-gradient(90.21deg, #F97316 0.36%, #FAAC15 38.72%, #1E3A8A 85.6%) ;">
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <img src="../../../assets/logo/Group 34.png" alt="">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
-            aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+<nav class="navbar">
+    <div class="logo">
+        <img src="../../../assets/logo/Group 34.png"  routerLink="/welcome"/>
+    </div>
+    <div class="menu" [ngClass]="{'active': menuActive}">
+        <a routerLink="/About"(click)="showContent('About Us')">About Us</a>
+        <a routerLink="/ourastrologers" (click)="showContent('Our Astrologers')">Our Astrologers</a>
+        <a routerLink="/daliyhoroscope" (click)="showContent('Daily Horoscope')">Daily Horoscope</a>
+        <a  routerLink="/kundli"(click)="showContent('Free Kundli')">Free Kundli</a>
+        <a href="#" (click)="showContent('Quotes of the Day')">Quotes of the Day</a>
+        <a routerLink="/testimonials"(click)="showContent('Testimonials')">Testimonials</a>
+        <button class="login-btn" [routerLink]="['/login']">
+            <img src="../../../assets/logo/User.png" alt=""> Login
         </button>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Our Astrologers</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Daily Horoscope</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Free Kundli</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Quotes of the Day</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Testimonials</a>
-                </li>
-            </ul>
-            <button class="btn" type="button">Login</button>
-        </div>
+    </div>
+    <div class="hamburger" (click)="toggleMenu()">
+        <div></div>
+        <div></div>
+        <div></div>
     </div>
 </nav>
+<!-- <div class="breadcrumb" id="breadcrumb">
+    {{ breadcrumb }}
 </div>
+
+<div class="content" id="content">
+    {{ content }}
+  </div> -->

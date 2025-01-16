@@ -11,23 +11,18 @@
 }
 
 .header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 38px;
-    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 3rem;
+    font-weight: 200;
     line-height: 58.51px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 
 .header p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.2rem;
+    line-height: 2;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
 }
 
 .card-container img {
@@ -44,8 +39,8 @@
 }
 
 .kundli h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.7rem;
     font-weight: 400;
     line-height: 39.01px;
     text-align: left;
@@ -56,8 +51,8 @@
 }
 
 .kun.kundli p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.7rem;
     font-weight: 400;
     line-height: 39.01px;
     text-align: left;
@@ -67,10 +62,10 @@
 }
 
 .bttn p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 28px;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 100;
+    line-height: 1.5;
     text-align: left;
     margin-left: 60px;
 }
@@ -81,15 +76,95 @@
     background-color: orange;
     color: black;
     border: 2px solid orange;
-    width: Hug (337px) px;
-    height: Hug (70px) px;
-    padding: 20px 40px 24px 40px;
+    width: 40%;
+    height: auto;
+    padding: 10px 20px;
     border-radius: 1000px;
-    border: 1px 0px 0px 0px;
-    opacity: 0px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
-    font-weight: 500;
-    line-height: 29.26px;
+    border: 1px;
+    opacity: 1;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+}
 
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .header h1 {
+        font-size: 2.5rem; /* Adjust heading size for medium screens */
+    }
+
+    .header p {
+        font-size: 1rem; /* Adjust paragraph size for medium screens */
+    }
+
+    .kun {
+        margin-left: 20px; /* Reduce margin for medium screens */
+    }
+
+    .bttn .btn {
+        width: 70%; /* Adjust button width for medium screens */
+        margin-left: 20px; /* Reduce left margin */
+    }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        text-align: left;
+        font-size: 2rem; /* Adjust heading size for small screens */
+    }
+
+    .header p {
+        text-align: left;
+        font-size: 0.9rem; /* Adjust paragraph size for small screens */
+    }
+
+    .kun {
+        margin-left: 10px; /* Further reduce margin for small screens */
+    }
+
+    .kundli {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: left; /* Center items */
+    }
+
+    .kundli h3, .kun.kundli p {
+        margin-top: 20px;
+        padding: 0;
+        font-size: 1.5rem; /* Adjust font size for small screens */
+        text-align: left; /* Center text */
+    }
+
+    .bttn p {
+        margin-left: 0; /* Remove left margin for small screens */
+        text-align: left; /* Center text */
+    }
+
+    .bttn .btn {
+        width: 50%; /* Full width for buttons on small screens */
+        margin-left: 0; /* Remove left margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        line-height: 1.5;
+        font-size: 1.5rem; /* Further adjust heading size for very small screens */
+    }
+
+    .header p {
+        font-size: 0.8rem; /* Further adjust paragraph size */
+    }
+
+    .kun {
+        margin-left: 0; /* Remove margin for very small screens */
+    }
+
+    .kundli h3, .kun.kundli p {
+        line-height: 1.5;
+        font-size: 1rem; /* Further adjust font size */
+    }
+
+    .bttn .btn {
+        width: 100%; /* Full width for buttons on very small screens */
+        padding: 15px; /* Adjust padding for smaller buttons */
+    }
 }

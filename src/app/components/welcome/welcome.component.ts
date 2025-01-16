@@ -7,5 +7,16 @@ import { Component } from '@angular/core';
   styleUrl: './welcome.component.css',
 })
 export class WelcomeComponent {
-  
+ 
+  menuActive = false;
+ 
+
+  toggleMenu() {
+    this.menuActive = !this.menuActive;
+  }
+
+  showContent(page: string) {
+    this.menuActive = false; // Close the menu after selection
+  }
+
 }

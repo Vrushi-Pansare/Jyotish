@@ -1,73 +1,10 @@
 .main-container {
   position: relative;
-  width: 100vw;
-  height: 100%;
-}
-
-.header{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0;
-  margin: 0;
-  margin-bottom: 300px;
-}
-.header .logo img{
-opacity: 1;
-
-}
-.nav{
-
-  margin-left: 230px;
-}
-
-.navbar-nav{
-  list-style: none;
-  display: flex;
-  padding: 0;
-  flex-direction: row;
-
-}
-.nav-item {
-  margin: 0 15px; /* Space between navigation items */
-}
-
-.nav-link {
-  color: white; /* White text color for links */
-  text-decoration: none; /* Remove underline */
-  transition: color 0.3s; /* Smooth transition for hover effect */
-}
-
-.nav-link:hover {
-  color: #ff9900; /* Change color on hover */
-}
-
-.login-button {
-  text-decoration: none;
-  color: black;
-width: Hug (348px)px;
-height: Hug (28px)px;
-padding: 10px 20px;
-border-radius: 32px;
-margin-left: 10px;
-background: linear-gradient(90deg, #FFB84D 0%, #FF8C00 100%);
-}
-
-/* .card-container {
-  background: #0a0a23;
-  color: white;
-  width: 90%;
-  margin: auto;
-  padding: 100px;
-  display: flex;
-}
-
-.card-image {
   width: 100%;
-  object-fit: cover;
-} */
+  height: auto;
+}
 
-.background {
+.hero-section {
   background-image: url("../../../assets/images/32e58779624e6f67eea10fed5eb74e5a.jpeg");
   object-fit: cover;
   color: white;
@@ -80,184 +17,299 @@ background: linear-gradient(90deg, #FFB84D 0%, #FF8C00 100%);
   height: 100%;
   padding: 20px;
   position: relative;
-  opacity: 100%;
+  opacity: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  margin-top: 0;
 }
 
-.background h3 {
-  font-size: 90px;
-  font-weight: 400;
-  font-family: 'Montserrat', sans-serif;
-  line-height: 99px;
-  text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 10px;
+  flex-wrap: nowrap;
+  margin-bottom: 8%;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  opacity: 1;
+}
+
+.navbar .logo img {
+  height: 40px;
+  width: auto;
+}
+
+.navbar .menu {
+  display: flex;
+  font-family: Inter, sans-serif;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.navbar .menu a {
+  color: white;
   text-decoration: none;
-  margin-top: -200px;
-  display: block;
+  margin: 0 15px;
+  font-size: 1rem;
+  ;
+  white-space: nowrap;
+}
+
+.navbar .menu a:hover {
+  text-decoration: underline;
+}
+
+.navbar .login-btn {
+  background: linear-gradient(90deg, #FFB84D 0%, #FF8C00 100%);
+  color: rgb(6, 6, 6);
+  Width: auto;
+  Height: 30px;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 1000px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar .login-btn img {
+  width: 24px;
+  height: auto;
+  padding: 2px 4px 2px 4px;
+  gap: 0px;
+  opacity: 0px;
+
+}
+
+.navbar .hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.navbar .hamburger div {
+  width: 25px;
+  height: 3px;
+  padding: auto;
+  background-color: white;
+  margin: 4px 0;
+}
+
+.hero h3 {
+  font-size: 5rem;
+  font-weight: 50; 
+  font-family:  Inter, sans-serif;
+  line-height: 1;
+  text-align: center;
+
 }
 
 .the-text {
-  font-size: 90px;
-  font-weight: 400;
-  line-height: 99px;
+  font-size: 5rem;
+  font-weight: 50;
+  font-family: Inter, sans-serif;
+  line-height: 1;
   text-align: center;
-  font-family: 'Montserrat', sans-serif;
   margin-right: 20px;
 }
 
 .jyotish-connect {
-  font-family: Montserrat;
-  font-size: 90px;
-  font-weight: 600;
-  line-height: 99px;
+  font-family: "Rubik", serif;
+  font-size: 5rem;
+  font-weight: 450;
+  line-height: 1;
   text-align: center;
-  text-underline-position: from-font;
 }
 
-.background p {
-  font-family: Montserrat;
-  font-size: 20px;
+.hero p {
+  font-family: Inter, sans-serif;
+  font-size: 1.1rem;
   font-weight: 400;
-  line-height: 24.38px;
+  line-height: 1;
   text-align: center;
-  text-underline-position: from-font;
-  text-decoration-skip-ink: none;
   margin-bottom: 50px;
 }
-.btn-g  {
+
+.btn-g {
   display: flex;
   justify-content: center;
   gap: 20px;
-  padding: 10px 50px;
-  border-radius: 200px;
-  font-weight: 500px;
-  font-family: Montserrat;
-  font-size: 24px;
-  font-weight: 500;
-  margin-bottom: 100px;
-  
+  padding: 10px 1%;
+  border-radius: 1000px;
+  font-family: Inter, sans-serif;
+  margin-bottom: 10%;
+
 }
 
-.btn-g a{
-  text-decoration: none; /* Remove underline */
+.btn-g a {
+  text-decoration: none;
+  /* Remove underline */
 }
 
 .main-container .batt {
   background-color: transparent;
   color: orange;
   border-color: orange;
-  width: Hug (337px);
-  height: Hug (80px);
+  width: 20%;
+  /* height: auto; */
   border: 2px solid #ff9900;
-  padding: 20px 40px 24px 40px;
+  padding: 10px 20px;
   border-radius: 1000px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
-  font-family: Montserrat;
-  font-size: 24px;
+  opacity: 1;
+  font-size: 16px;
   font-weight: 500;
   line-height: 29.26px;
+  text-align: center;
+  /* Center text */
 }
 
 .main-container .btn-p {
   background-color: orange;
   color: black;
   border: 2px solid orange;
-  width: Hug (337px) px;
-  height: Hug (70px) px;
-  padding: 20px 40px 24px 40px;
+  width: 20%;
+  padding: 10px 20px;
   border-radius: 1000px;
-  border: 1px 0px 0px 0px;
-  opacity: 0px;
-  font-family: Montserrat;
-  font-size: 24px;
+  opacity: 1;
+  font-size: 16px;
   font-weight: 500;
   line-height: 29.26px;
-  text-align: left;
+  text-align: center;
   text-decoration-skip-ink: none;
 }
 
-
-@media (max-width: 768px) {
-  .text-content {
-    margin: 2rem;
-  }
-
-  .background h1 {
-    font-size: 8vw;
-    /* Adjust for smaller screens */
-  }
-
-  .background h2.the-text {
-    font-size: 7vw;
-    /* Adjust for smaller screens */
-  }
-
-  .background p {
-    font-size: 3vw;
-    /* Adjust for smaller screens */
-  }
-
+@media (max-width: 1100px){
+  
   .btn-g {
-    font-size: 3vw;
-    /* Adjust for smaller screens */
+    flex-direction: row;
+    /* Stack buttons vertically on smaller screens */
+    gap: 10px;
+    /* Reduce gap between buttons */
   }
+
+  .main-container .batt,
+  .main-container .btn-p {
+    width: 30%;
+    /* Increase width on smaller screens */
+    max-width: none;
+    /* Remove max-width for smaller screens */
+  }
+
 }
 
 /* Media Queries for Mobile Devices */
 @media (max-width: 768px) {
-
-  .header {
-    flex-direction: column; /* Stack items vertically */
-    align-items: flex-start; /* Align items to the start */
-}
-
-.navbar-nav {
-    flex-direction: column; /* Stack nav items vertically */
-    width: 100%; /* Full width for nav */
-    padding: 0; /* Remove padding */
-}
-
-.nav-item {
-    margin: 10px 0; /* Space between nav items */
-}
-
-.login-button {
-    width: 100%; /* Full width for login button */
-    margin-top: 10px; /* Space above the button */
-}
-
-  .background {
-    height: 100vh;
-    /* Full height for mobile */
+  .navbar .menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    text-align: left;
+    top: 60px;
+    background-color: black;
+    /* background: linear-gradient(90deg, #FFB84D 0%, #FF8C00 100%); */
+    width: 100%;
   }
 
-  .background h1 {
-    font-size: 8vw;
-    /* Adjust for smaller screens */
+  .navbar .menu.active {
+    display: flex;
+    /* Show menu when active */
   }
 
-  .background h2.the-text {
-    font-size: 7vw;
-    /* Adjust for smaller screens */
+  .navbar .hamburger {
+    display: flex;
+    /* Show hamburger icon */
   }
 
-  .background p {
-    font-size: 4vw;
-    /* Adjust for smaller screens */
+  .navbar {
+    flex-direction: row;
+    align-items: flex-start;
   }
 
-  .btn-g{
-    font-size: 4vw;
-    /* Adjust for smaller screens */
-    width: 80%;
-    /* Full width for buttons on mobile */
+  .navbar .login-btn {
+    width: 15%;
+    margin-top: 20px;
+  }
+
+  .hero h3 {
+    font-size: 2.5rem;
+    /* Adjust font size for mobile */
+  }
+
+  .the-text,
+  .jyotish-connect {
+    font-size: 2.5rem;
+    /* Adjust font size for mobile */
+  }
+
+  .hero .p {
+    font-size: 1rem;
+    /* Adjust font size for mobile */
+  }
+
+  .btn-g {
+    flex-direction: row;
+    /* Stack buttons vertically on smaller screens */
+    gap: 10px;
+    /* Reduce gap between buttons */
+  }
+
+  .main-container .batt,
+  .main-container .btn-p {
+    width: 30%;
+    /* Increase width on smaller screens */
+    max-width: none;
+    font-size: 12px;
+    /* Remove max-width for smaller screens */
   }
 }
 
 
+@media (max-width: 320px) {
+  .navbar .menu {
+    font-size: 0.8rem; /* Smaller font size for very small screens */
+  }
+
+  .navbar .menu a {
+    text-align: left;
+    margin: 0 5px; /* Reduce margin for menu items */
+  }
+
+  .navbar .login-btn {
+    width: 40%; /* Full width for login button */
+    font-size: 14px; /* Smaller font size */
+  }
+
+  .hero h3 {
+    font-size: 2.2rem; /* Further reduce font size */
+  }
+
+  .the-text {
+    font-size: 2.2rem; 
+    margin-right: 10px;
+  }
+  .jyotish-connect {
+    font-size: 2.2rem; /* Further reduce font size */
+  }
+
+  .hero p {
+    font-size: 0.6rem; /* Smaller font size for paragraph */
+  }
+
+  .btn-g {
+    flex-direction: column; /* Stack buttons vertically */
+    gap: 5px; /* Reduce gap between buttons */
+    align-items: center;
+  }
+
+  .main-container .batt,
+  .main-container .btn-p {
+    width: 100%; /* Increase width on very small screens */
+  }
+}

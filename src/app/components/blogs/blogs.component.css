@@ -11,48 +11,53 @@
 }
 
 .button h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 40px;
-    font-weight: 300;
-    line-height: 48.51px;
+    font-weight: 400;
+    line-height: 1.5;
     text-align: left;
     color: #1E3A8A;
     margin-bottom: 10px;
+
 }
 
 
 .button .btn {
-    width: Hug (100px)px;
-    height: Hug (37px)px;
-    padding: 10.5px 20px 8.5px 20px;
+    width: 20%;
+    height: auto;
+    padding: 10px 20px;
     border-radius: 1000px;
+    color: rgba(26, 26, 26, 1);
     opacity: 0px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24.38px;
-    margin-bottom: 30px;
-    margin-left: 110px;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1;
+    margin-top: 20px;
+    margin-left: 100px;
     background: linear-gradient(90deg, #FACC15 0%, #F97316 100%);
 }
 
+
 .card {
     border: white;
+    width: 100%;
+    height: auto;
 }
 
 .card img {
     width: 100%;
-    height: 80%;
+    height: auto;
     top: 3537px;
     left: 680px;
     gap: 0px;
-    border-radius: 35px 0px 0px 0px;
+    border-radius: 25px;
     opacity: 0px;
 
 }
 
 .card h2 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 14px;
     font-weight: 500;
     line-height: 19.5px;
@@ -62,7 +67,7 @@
 }
 
 .card h3 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 25px;
     font-weight: 400;
     line-height: 39.01px;
@@ -73,7 +78,7 @@
 }
 
 .care p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 300;
     line-height: 20px;
@@ -82,7 +87,7 @@
 
 
 .card .batt {
-    font-family:'Montserrat', sans-serif;
+    font-family: Inter, sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 20.2px;
@@ -90,4 +95,83 @@
     text-align: left;
     text-decoration-line: underline;
     text-decoration-style: solid;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .button h1 {
+        font-size: 30px; /* Adjust heading size for medium screens */
+    }
+
+    .button .btn {
+        width: 100px; /* Adjust button width for medium screens */
+        font-size: 16px; /* Adjust font size for medium screens */
+        margin-left: 60px; /* Reduce left margin */
+    }
+
+    .card h3 {
+        font-size: 22px; /* Adjust card heading size for medium screens */
+    }
+
+    .card h2 {
+        font-size: 12px; /* Adjust card subheading size for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .button {
+        flex-direction: column; /* Stack buttons vertically */
+        align-items: left; /* Center buttons */
+        gap: 10px; /* Reduce gap between buttons */
+    }
+
+    .button h1 {
+        font-size: 24px; /* Adjust heading size for small screens */
+    }
+
+    .button .btn {
+        width: 100%; /* Full width for buttons on small screens */
+        margin-left: 0; /* Remove left margin */
+    }
+    
+    .card {
+        margin: 20px;
+        /* Add margin for spacing between cards */
+    }
+
+    .card h3 {
+        font-size: 20px; /* Adjust card heading size for small screens */
+    }
+
+    .card h2 {
+        font-size: 12px; /* Adjust card subheading size for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .button h1 {
+        font-size: 20px; /* Further adjust heading size for very small screens */
+    }
+
+    .button .btn {
+        width: 100%; /* Full width for buttons on very small screens */
+        padding: 10px; /* Adjust padding for smaller buttons */
+    }
+    
+    .card h3 {
+        font-size: 18px; /* Further adjust card heading size for very small screens */
+    }
+
+    .card h2 {
+        font-size: 10px; /* Further adjust card subheading size for very small screens */
+    }
+
+    .care p {
+        font-size: 14px; /* Adjust care paragraph size for very small screens */
+    }
+
+    .card .batt {
+        font-size: 14px; /* Adjust batt text size for very small screens */
+    }
 }

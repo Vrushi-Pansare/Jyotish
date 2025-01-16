@@ -17,6 +17,17 @@ import { HappycustomerComponent } from './components/happycustomer/happycustomer
 import { BlogsComponent } from './components/blogs/blogs.component';
 import { QdayComponent } from './components/qday/qday.component';
 import { GuidComponent } from './components/guid/guid.component';
+import { WithusComponent } from './components/withus/withus.component';
+import { DailyhoroscopeComponent } from './pages/dailyhoroscope/dailyhoroscope.component';
+import { TestimonialsComponent } from './pages/testimonials/testimonials.component';
+import { KundliComponent } from './pages/kundli/kundli.component';
+import { KundlidetailsComponent } from './components/kundlidetails/kundlidetails.component';
+import { OurastrologersComponent } from './pages/ourastrologers/ourastrologers.component';
+import { LanguageSwitcherComponent } from './components/language-switcher/language-switcher.component';
+import { DailyHoroscopeDetailsComponent } from './pages/daily-horoscope-details/daily-horoscope-details.component';
+import { MeetastrologerComponent } from './pages/meetastrologer/meetastrologer.component';
+import { CardComponent } from './components/card/card.component';
+
 
 
 @NgModule({
@@ -36,6 +47,17 @@ import { GuidComponent } from './components/guid/guid.component';
     BlogsComponent,
     QdayComponent,
     GuidComponent,
+    WithusComponent,
+    DailyhoroscopeComponent,
+    TestimonialsComponent,
+    KundliComponent,
+    KundlidetailsComponent,
+    OurastrologersComponent,
+    LanguageSwitcherComponent,
+    DailyHoroscopeDetailsComponent,
+    MeetastrologerComponent,
+    CardComponent,
+  
 
   ],
   imports: [

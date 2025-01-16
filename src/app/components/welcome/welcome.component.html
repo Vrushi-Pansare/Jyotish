@@ -1,35 +1,29 @@
 <div class="main-container">
-  <div class="background">
+  <div class="hero-section">
     <!-- header -->
-    <header class="header">
+    <nav class="navbar">
       <div class="logo">
-        <img src="../../../assets/logo/Group 34.png" alt="">
+          <img src="../../../assets/logo/Group 34.png" />
       </div>
-      <nav class="nav">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/About">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" >Our Astrologers</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Daily Horoscope</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Free Kundli</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Quotes of the Day</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Testimonials</a>
-          </li>
-        </ul>
-      </nav>
-      <a class="login-button" [routerLink]="['/login']">Login</a> <!-- Login Button -->
-    </header>
+      <div class="menu" [ngClass]="{'active': menuActive}">
+          <a routerLink="/About"(click)="showContent('About Us')">About Us</a>
+          <a routerLink="/ourastrologers" (click)="showContent('Our Astrologers')">Our Astrologers</a>
+          <a routerLink="/daliyhoroscope" (click)="showContent('Daily Horoscope')">Daily Horoscope</a>
+          <a  routerLink="/kundli"(click)="showContent('Free Kundli')">Free Kundli</a>
+          <a href="#" (click)="showContent('Quotes of the Day')">Quotes of the Day</a>
+          <a routerLink="/testimonials"(click)="showContent('Testimonials')">Testimonials</a>
+          <button class="login-btn" [routerLink]="['/login']">
+              <img src="../../../assets/logo/User.png" alt=""> Login
+          </button>
+      </div>
+      <div class="hamburger" (click)="toggleMenu()">
+          <div></div>
+          <div></div>
+          <div></div>
+      </div>
+  </nav>
     <!-- welcome page-->
+     <div class="hero">
     <h3>Welcome To</h3>
     <h2>
       <span class="the-text">The</span>
@@ -44,6 +38,7 @@
       <a class="btn-p"> <img src="../../../assets/Call/Phone Calling Rounded.png" alt=""> Talk to Astrologer </a>
     </div>
   </div>
+  </div>
 </div>
 <app-astrologer />
 <app-discover />
@@ -52,4 +47,5 @@
 <app-blogs />
 <app-qday />
 <app-guid />
-<app-footer />
+
+<app-footer /> 

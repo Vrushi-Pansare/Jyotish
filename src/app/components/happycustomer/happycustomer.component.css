@@ -6,7 +6,7 @@
 }
 
 .hedar h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 40px;
     font-weight: 300;
     line-height: 50.51px;
@@ -24,7 +24,7 @@
     width: 100%;
     height: 90%;
     border-radius: 20px;
-    opacity: 0px;
+    opacity: 1;
     box-shadow: 0px 2px 8px 0px #0000000D;
 
 
@@ -37,12 +37,12 @@
     left: 1296px;
     padding: 0px;
     gap: 0px;
-    opacity: 0.3px;
+    opacity: 1;
     margin-top: 20px;
 }
 
 .card p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     margin-top: 20px;
     font-weight: 200;
@@ -60,12 +60,12 @@
     top: 4018px;
     left: 1304px;
     gap: 0px;
-    opacity: 0px;
+    opacity: 1;
 }
 
 .cardimage p {
     margin-top: 30px;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     color: #1E3A8A;
 
@@ -77,4 +77,80 @@
     gap: 0px;
     margin-top: 30px;
     margin-left: 40px;
+}
+
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .hedar h1 {
+        font-size: 30px; /* Adjust heading size for medium screens */
+    }
+
+    .card p {
+        font-size: 14px; /* Adjust paragraph size for medium screens */
+    }
+
+    .cardimage p {
+        margin-right: -50px;
+        font-size: 12px; /* Adjust card image paragraph size for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .hedar h1 {
+        font-size: 24px; /* Adjust heading size for small screens */
+    }
+
+    .card {
+        padding: 5px; /* Reduce padding for smaller screens */
+    }
+
+    .card p {
+        font-size: 12px; /* Adjust paragraph size for small screens */
+        margin-bottom: 30px; /* Reduce bottom margin */
+    }
+
+    .cardimage img {
+        width: 40px; /* Adjust image size for small screens */
+        height: 40px; /* Adjust image size for small screens */
+    }
+
+    .cardimage p {
+        font-size: 10px; /* Adjust card image paragraph size for small screens */
+    }
+
+    .cardimage span img {
+        width: 60px; /* Adjust span image size for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hedar h1 {
+        font-size: 20px; /* Further adjust heading size for very small screens */
+    }
+
+    .card {
+        padding: 10px; /* Further reduce padding for very small screens */
+    }
+
+    .card p {
+        font-size: 10px; /* Further adjust paragraph size for very small screens */
+        margin-bottom: 20px; /* Further reduce bottom margin */
+    }
+
+    .cardimage img {
+        width: 30px; /* Further adjust image size for very small screens */
+        height: 30px; /* Further adjust image size for very small screens */
+    }
+
+    .cardimage p {
+        margin-right: -40px;
+        font-size: 10px; /* Further adjust card image paragraph size for very small screens */
+    }
+
+    .cardimage span img {
+        margin-right: 50px;
+        width: 40px; /* Further adjust span image size for very small screens */
+    }
 }

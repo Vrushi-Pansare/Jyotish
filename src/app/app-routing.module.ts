@@ -12,12 +12,27 @@ import { HappycustomerComponent } from './components/happycustomer/happycustomer
 import { BlogsComponent } from './components/blogs/blogs.component';
 import { QdayComponent } from './components/qday/qday.component';
 import { GuidComponent } from './components/guid/guid.component';
+import { WithusComponent } from './components/withus/withus.component';
+import { DailyhoroscopeComponent } from './pages/dailyhoroscope/dailyhoroscope.component';
+import { TestimonialsComponent } from './pages/testimonials/testimonials.component';
+import { KundliComponent } from './pages/kundli/kundli.component';
+import { KundlidetailsComponent } from './components/kundlidetails/kundlidetails.component';
+import { OurastrologersComponent } from './pages/ourastrologers/ourastrologers.component';
+import { DailyHoroscopeDetailsComponent } from './pages/daily-horoscope-details/daily-horoscope-details.component';
+import { MeetastrologerComponent } from './pages/meetastrologer/meetastrologer.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  {path: 'meetastrologer', component: MeetastrologerComponent},
   {path: 'login', component: LoginComponent},
   {path: 'otp', component: OtpVerificationComponent},
+  {path: 'DailyHoroscope_Details', component: DailyHoroscopeDetailsComponent},
+  {path: 'kundli', component: KundliComponent},
+  {path: 'kundlidetails', component: KundlidetailsComponent},
+  {path: 'ourastrologers', component: OurastrologersComponent},
+  {path: 'daliyhoroscope', component: DailyhoroscopeComponent},
+  { path: 'testimonials', component: TestimonialsComponent},
   {path: 'About', component: AboutComponent},
   {path: 'welcome', component: WelcomeComponent},
   {path: 'astrologer', component: AstrologerComponent},
@@ -26,7 +41,11 @@ const routes: Routes = [
   {path: 'happycustomer', component: HappycustomerComponent},
   {path: 'blogs', component: BlogsComponent},
   {path: 'qday', component: QdayComponent},
-  {path: 'guid', component: GuidComponent}
+  {path: 'guid', component: GuidComponent},
+  {path: 'withus', component: WithusComponent},
+  
+  
+
 
 ];
 

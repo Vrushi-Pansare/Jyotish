@@ -1,19 +1,20 @@
 .card-container {
     width: 100%;
-    height: 40%;
-    padding: 50px;
-    background-image: url('../../../assets/footer/footer-bg\ \(5\).png');
+    height: auto;
+    padding: 5%;
+    background-image: url('../../../assets/footer/footer-bg\ \(6\).png');
 }
 
 .row {
     display: flex;
     text-align: center;
+    flex-wrap: wrap;
     color: aliceblue;
 }
 
 
 .hedar h1 {
-    font-family: Montserrat;
+    font-family: 'Rubik', sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 29.26px;
@@ -24,9 +25,9 @@
 }
 
 .hedar p {
-    font-family: Poppins;
-    font-size: 20px;
-    font-weight: 400;
+    font-family: 'Inter', sans-serif;
+    font-size: 13px;
+    font-weight: 100;
     line-height: 30px;
     text-align: left;
     text-underline-position: from-font;
@@ -35,20 +36,21 @@
 }
 
 .quick {
-    margin-left: 100px;
+    margin-left: 20%;
+    flex: 1; /* Allow flex to grow */
 
 }
 
 .quick h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
     text-align: left;
 
 }
 
 .quick a {
-    font-family: Montserrat;
-    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
     line-height: 24.38px;
     text-align: left;
     text-decoration: none;
@@ -60,17 +62,18 @@
 
 .Contact {
     text-align: left;
+    flex: 1; 
 }
 
 .Contact h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
     text-align: left;
 }
 
 .Contact p {
-    font-family: Montserrat;
-    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
     line-height: 24.38px;
     text-align: left;
     text-decoration: none;
@@ -82,11 +85,12 @@
 .subscribe {
     text-align: left;
     margin-right: 30px;
+    flex: 1;
 }
 
 .subscribe h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
     font-weight: 5px;
     text-align: left;
 }
@@ -105,5 +109,94 @@
 .subscribe-container .btn {
     border-radius: 50px;
     background: linear-gradient(90deg, #FACC15 0%, #F97316 100%);
+    padding: 10px 20px; 
+}
+
+.social-icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    margin-right: 50%;
+    opacity: 1;
 
 }
+
+.social-icons img {
+    width: 32px;
+    height: 32px;
+    padding: 3px ;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .header h1 {
+        font-size: 30px; /* Adjust heading size for medium screens */
+    }
+
+    .kun h3 {
+        text-align: left;
+        font-size: 20px; /* Adjust heading size for medium screens */
+    }
+
+    .kun p {
+        font-size: 14px; /* Adjust paragraph size for medium screens */
+    }
+    .quick{
+        text-align: left;
+    }
+
+    .bttn .btn {
+        width: 40%; /* Adjust button width for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 24px; /* Adjust heading size for small screens */
+    }
+
+    .kun h3 {
+        font-size: 18px;
+        text-align: left; /* Adjust heading size for small screens */
+    }
+    .quick{
+        text-align: left;
+    }
+
+    .kun p {
+        font-size: 12px; /* Adjust paragraph size for small screens */
+    }
+
+    .bttn .btn {
+        width: 60%; /* Adjust button width for small screens */
+        margin-left: 0; /* Remove left margin */
+    }
+
+    .main img {
+        margin-left: 0; /* Remove left margin for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 20px; /* Further adjust heading size for very small screens */
+    }
+
+    .kun h3 {
+        font-size: 16px; /* Further adjust heading size for very small screens */
+    }
+
+    .kun p {
+        font-size: 10px; /* Further adjust paragraph size for very small screens */
+    }
+
+    .bttn .btn {
+        width: 100%; /* Full width for buttons on very small screens */
+    }
+
+    .main img {
+        margin-left: 0; /* Remove left margin for very small screens */
+    }
+}
+
