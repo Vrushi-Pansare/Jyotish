@@ -5,7 +5,7 @@
 }
 
 .hero-section {
-  background-image: url("../../../assets/images/32e58779624e6f67eea10fed5eb74e5a.jpeg");
+  background-image: url("../../../assets/Call/WhatsApp\ Image\ 2025-01-16\ at\ 13.49.41_2d15dca7.jpg");
   object-fit: cover;
   color: white;
   background-attachment: fixed;
@@ -46,7 +46,7 @@
 
 .navbar .menu {
   display: flex;
-  font-family: Inter, sans-serif;
+  font-family: 'Inter', sans-serif;
   flex-wrap: nowrap;
   align-items: center;
 }
@@ -104,8 +104,8 @@
 
 .hero h3 {
   font-size: 5rem;
-  font-weight: 50; 
-  font-family:  Inter, sans-serif;
+  font-weight: 100; 
+  font-family:  'Inter', sans-serif;
   line-height: 1;
   text-align: center;
 
@@ -113,8 +113,8 @@
 
 .the-text {
   font-size: 5rem;
-  font-weight: 50;
-  font-family: Inter, sans-serif;
+  font-weight: 100;
+  font-family: 'Inter', sans-serif;
   line-height: 1;
   text-align: center;
   margin-right: 20px;
@@ -129,7 +129,7 @@
 }
 
 .hero p {
-  font-family: Inter, sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 1;
@@ -143,7 +143,7 @@
   gap: 20px;
   padding: 10px 1%;
   border-radius: 1000px;
-  font-family: Inter, sans-serif;
+  font-family: 'Inter', sans-serif;
   margin-bottom: 10%;
 
 }

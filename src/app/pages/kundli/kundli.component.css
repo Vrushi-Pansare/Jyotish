@@ -11,8 +11,8 @@
 }
 
 .main h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 48px;
+    font-family: 'Inter', sans-serif;
+    font-size: 40px;
     font-weight: 400;
     line-height: 58.51px;
     text-align: center;
@@ -23,8 +23,9 @@
 }
 
 .main p {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
+    
+    font-family: 'Inter', sans-serif;
+    font-size: 17px;
     font-weight: 400;
     width: 80%;
     line-height: 28px;
@@ -43,14 +44,21 @@
 }
 
 .form-container {
-    display: column;
-    border-radius: 20px;
-    box-shadow: 0px 2px 8px 0px rgba(0, 0, 0, 0.05);
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+    width: 100%;
+    border-radius:  0px 0px 20px;
+    margin-left: -50px;
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0px 4px 16px 0px rgba(0, 0, 0, 0.10);
+
+    
 
 }
 
 .form-container h2 {
-    font-family: 'Montserrat', sans-serif;
+    
+    font-family: 'Inter', sans-serif;
     font-size: 28px;
     font-weight: 400;
     line-height: 34.13px;
@@ -62,7 +70,8 @@
 }
 
 .form-container p {
-    font-family: 'Montserrat', sans-serif;
+    
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -73,7 +82,8 @@
 }
 
 .form-container .name p {
-    font-family: 'Montserrat', sans-serif;
+    
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 17.07px;
@@ -91,14 +101,16 @@
     opacity: 0.05px;
     font-size: 14px;
     padding: 10px;
-    font-family: 'Montserrat', sans-serif;
+   
+    font-family: 'Inter', sans-serif;
     margin-bottom: 20px;
     border: none;
     background-color: rgb(243, 240, 240);
 }
 
 .form-container .brith p {
-    font-family: 'Montserrat', sans-serif;
+   
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 17.07px;
@@ -116,14 +128,16 @@
     opacity: 0.05px;
     font-size: 14px;
     padding: 10px;
-    font-family: 'Montserrat', sans-serif;
+   
+    font-family: 'Inter', sans-serif;
     margin-bottom: 10px;
     border: none;
     background-color: rgb(243, 240, 240);
 }
 
 .form-container .date p {
-    font-family: 'Montserrat', sans-serif;
+   
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 17.07px;
@@ -140,7 +154,8 @@
     border-radius: 100px;
     opacity: 0.05px;
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
+   
+    font-family: 'Inter', sans-serif;
     margin-bottom: 10px;
     padding: 10px;
     border: none;
@@ -149,7 +164,8 @@
 
 
 .form-container .time p {
-    font-family: 'Montserrat', sans-serif;
+  
+    font-family: 'Inter', sans-serif;
     font-size: 14px;
     font-weight: 400;
     line-height: 17.07px;
@@ -166,7 +182,8 @@
     border-radius: 100px;
     opacity: 0.05px;
     font-size: 14px;
-    font-family: 'Montserrat', sans-serif;
+   
+    font-family: 'Inter', sans-serif;
     margin-bottom: 20px;
     padding: 10px;
     border: none;
@@ -195,8 +212,9 @@
 }
 
 .btn {
-    width: 50%;
-    height: 50px;
+    width: 40%;
+    height: auto;
+    padding: 10px 20px;
     background: linear-gradient(90deg, rgba(250, 204, 21, 0.1) 0%, rgba(249, 115, 22, 0.1) 100%);
     border-radius: 100px;
     margin-top: 30px;
@@ -205,12 +223,14 @@
 }
 .header{
     padding: 50px;
+    display: row;
 }
 
 
 .nav a {
-    font-family: Montserrat;
-    font-size: 16px;
+  
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
     font-weight: 500;
     display: flex;
     color: rgb(103, 102, 102);
@@ -225,9 +245,10 @@
 }
 
 .card-container p {
-    font-family: 'Montserrat', sans-serif;
+    
+    font-family: 'Inter', sans-serif;
     font-size: 18px;
-    font-family: 'Montserrat', sans-serif;
+   
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
 
@@ -240,7 +261,8 @@
 
 .text h3 {
     color: white;
-    font-family: 'Montserrat', sans-serif;
+   
+    font-family: 'Inter', sans-serif;
     font-size: 30px;
     font-weight: 500;
     line-height: 40.2px;
@@ -249,14 +271,15 @@
 
 .text button {
 
-    width: Hug (423px)px;
-    height: Hug (90px)px;
+    width: 80%;
+    height: auto;
     margin-top: 20px;
+    padding: 10px 20px;
     gap: 10px;
     text-align: center;
     border-radius: 1000px;
     opacity: 0px;
-    font-size: 12px;
+    font-size: 16px;
     background: linear-gradient(90deg, #FFB84D 0%, #FF8C00 100%);
 
 }
@@ -265,4 +288,84 @@
 .main-section {
     padding: 0;
     margin: 0;
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .main h1 {
+        font-size: 32px; /* Adjust heading size for medium screens */
+    }
+
+    .main p {
+        font-size: 15px; /* Adjust paragraph size for medium screens */
+    }
+
+    .main-content img {
+        width: 50%; /* Adjust image width for medium screens */
+    }
+
+    .form-container {
+        display: column;
+    }
+    .form-container .name input,
+    .form-container .brith input,
+    .form-container .date input,
+    .form-container .time input {
+        width: 90%; /* Full width for inputs on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 30px; /* Reduce padding for smaller screens */
+    }
+
+    .main h1 {
+        font-size: 28px; /* Further adjust heading size for small screens */
+    }
+
+    .main p {
+        font-size: 14px; /* Further adjust paragraph size for small screens */
+    }
+
+    .main-content img {
+        width: 50%; /* Full width for images on small screens */
+    }
+
+    .form-container {
+        flex-direction:column;
+    }
+    .form-container .name input,
+    .form-container .brith input,
+    .form-container .date input,
+    .form-container .time input {
+        width: 100%; /* Full width for inputs on small screens */
+    }
+
+    .btn {
+        width: 80%; /* Adjust button width for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .main {
+        padding: 20px; /* Further reduce padding for very small screens */
+    }
+
+    .main h1 {
+        font-size: 24px; /* Further adjust heading size for very small screens */
+    }
+
+    .main p {
+        font-size: 12px; /* Further adjust paragraph size for very small screens */
+    }
+
+    .text h3 {
+        font-size: 24px; /* Adjust text size for very small screens */
+    }
+
+    .text button {
+        width: 100%; /* Full width for buttons on very small screens */
+    }
 }

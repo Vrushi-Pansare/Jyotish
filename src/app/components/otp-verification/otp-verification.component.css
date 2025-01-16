@@ -1,10 +1,16 @@
-.con {
-    position: fixed;
-    width: 100vw;
-    height: 100%;
-    margin: 0px;
-    padding: 50px 400px;
-    justify-content: flex-end;
+.sidebar {
+    background-color: white;
+            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            position: fixed;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            z-index: 1000;
 
 }
 
@@ -67,7 +73,7 @@
 }
 
 .header-container h2 {
-    font-family: Montserrat;
+    font-family: 'Inter', sans-serif;
     font-size: 28px;
     font-weight: 400;
     line-height: 28px;
@@ -79,7 +85,7 @@
 }
 
 .header-container h2 span {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 28px;
     font-weight: 600;
     line-height: 28px;
@@ -89,7 +95,7 @@
 }
 
 .header-container p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 25.6px;
@@ -100,7 +106,7 @@
 }
 
 .header-container p span {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 600;
     line-height: 25.6px;
@@ -134,7 +140,7 @@
 }
 
 .timer {
-    font-family: Montserrat;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 600;
     line-height: 16px;
@@ -145,7 +151,7 @@
 }
 
 .resend {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
     line-height: 16px;
@@ -167,7 +173,7 @@
     border-radius: 32px;
     font-size: 16px;
     cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 24px;
     font-weight: 500;
     line-height: 29.26px;
@@ -177,7 +183,7 @@
 
 
 .edit-no {
-    font-family: Montserrat;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 500;
     line-height: 24.38px;
@@ -187,70 +193,64 @@
     margin-top: 10px;
 }
 
-/* small screen Responsiveness */
-@media (max-width: 768px) {
-    .con {
-        padding: 20px; 
-    }
 
-    .button {
-        margin-left: 0;
-        margin-bottom: 20px; 
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 60%; /* Adjust sidebar width for medium screens */
     }
 
     .header-container h2 {
-        font-size: 24px; 
+        font-size: 24px; /* Adjust heading size for medium screens */
     }
 
     .header-container p {
-        font-size: 14px; 
+        font-size: 14px; /* Adjust paragraph size for medium screens */
     }
 
     .otp-inputs input {
-        width: 40px; 
-        height: 40px; 
-        font-size: 18px; 
+        width: 50px; /* Adjust input width for medium screens */
     }
-
-    .timer-resend {
-        flex-direction: column; 
-        gap: 20px;     }
 
     .verify-btn {
-        width: 90%;
-    }
-
-    .edit-no {
-        margin-left: 0;
-        text-align: center; 
+        width: 80%; /* Adjust button width for medium screens */
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
+    .sidebar {
+        width: 100%; /* Full width for sidebar on small screens */
+        position: relative; /* Change position for small screens */
+        height: auto; /* Allow height to adjust based on content */
+    }
+
+    .header-container {
+ text-align: center; /* Center align header content on small screens */
+    }
+
     .header-container h2 {
-        font-size: 20px;
+        font-size: 22px; /* Further adjust heading size for small screens */
     }
 
     .header-container p {
-        font-size: 12px; 
+        font-size: 12px; /* Further adjust paragraph size for small screens */
     }
 
-    .button {
-        width: 20px; 
-        height: 20px; 
+    .otp-inputs {
+        flex-direction: row; /* Stack OTP inputs vertically on small screens */
+        gap: 10px; /* Reduce gap between inputs */
     }
 
-    .X, .Y {
-        width: 0.4em; 
-        height: 0.4px; 
-    }
-
-    .close {
-        font-size: 14px; 
+    .otp-inputs input {
+        width: 100%; /* Full width for OTP inputs */
     }
 
     .verify-btn {
-        padding: 10px; 
-        font-size: 14px; 
+        width: 90%; /* Adjust button width for small screens */
+    }
+
+    .edit-no {
+        font-size: 18px; /* Adjust font size for edit number on small screens */
+        margin-left: 0; /* Remove left margin on small screens */
     }
 }

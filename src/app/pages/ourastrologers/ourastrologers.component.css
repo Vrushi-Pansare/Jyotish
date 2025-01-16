@@ -11,7 +11,7 @@
 }
 
 .title h1 {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 48px;
     font-weight: 400;
     line-height: 58.51px;
@@ -22,7 +22,7 @@
 
 
 .title p {
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 20px;
     font-weight: 400;
     line-height: 28px;
@@ -96,7 +96,7 @@
 @media (max-width: 768px) {
     .title {
         margin-top: 30%;
-        padding: 100px 20px; /* Further reduce padding for small screens */
+        padding: 100px 100px; /* Further reduce padding for small screens */
     }
 
     .title h1 {
@@ -109,6 +109,7 @@
     }
 
     .search-container {
+        margin-left: 40px;
         width: 90%; /* Make search container wider on small screens */
         margin-top: 20px; /* Adjust margin for small screens */
     }

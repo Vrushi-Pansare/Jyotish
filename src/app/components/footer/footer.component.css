@@ -2,7 +2,7 @@
     width: 100%;
     height: auto;
     padding: 5%;
-    background-image: url('../../../assets/footer/footer-bg\ \(6\).png');
+    background-image: url('../../../assets/footer/Untitled.png');
 }
 
 .row {
@@ -96,9 +96,12 @@
 }
 
 .subscribe input {
-    border-radius: 50px;
+    border-radius: 100px;
     border-color: #E2E2E2;
     background-color: transparent;
+    font-size: 16px;
+    font-family: 'Inter', sans-serif;
+    padding: 5px;
 }
 
 .subscribe-container {
@@ -108,6 +111,10 @@
 
 .subscribe-container .btn {
     border-radius: 50px;
+    width: 40%;
+    font-size: 14px;
+    font-family: 'Inter', sans-serif;
+    height: auto;
     background: linear-gradient(90deg, #FACC15 0%, #F97316 100%);
     padding: 10px 20px; 
 }
