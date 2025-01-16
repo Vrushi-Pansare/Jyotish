@@ -193,6 +193,15 @@
     .kun h3 {
         font-size: 16px; /* Further adjust heading size for very small screens */
     }
+    .quick {
+        margin-left: 5px;
+        margin-top: 20px;
+
+    }
+
+    .Contact {
+        margin-top: 20px;
+    }
 
     .kun p {
         font-size: 10px; /* Further adjust paragraph size for very small screens */
@@ -202,6 +211,13 @@
         width: 100%; /* Full width for buttons on very small screens */
     }
 
+    .subscribe-container{
+        flex-direction: column;
+    }
+    
+    .subscribe-container .btn {
+        width: 100%;
+    }
     .main img {
         margin-left: 0; /* Remove left margin for very small screens */
     }
