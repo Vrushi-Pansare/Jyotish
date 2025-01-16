@@ -20,10 +20,12 @@ import { KundlidetailsComponent } from './components/kundlidetails/kundlidetails
 import { OurastrologersComponent } from './pages/ourastrologers/ourastrologers.component';
 import { DailyHoroscopeDetailsComponent } from './pages/daily-horoscope-details/daily-horoscope-details.component';
 import { MeetastrologerComponent } from './pages/meetastrologer/meetastrologer.component';
+import { DailyHoroscopeComponent } from './components/daily-horoscope/daily-horoscope.component';
 
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
+  {path: 'daily-horoscope', component: DailyHoroscopeComponent},
   {path: 'meetastrologer', component: MeetastrologerComponent},
   {path: 'login', component: LoginComponent},
   {path: 'otp', component: OtpVerificationComponent},
@@ -43,7 +45,8 @@ const routes: Routes = [
   {path: 'qday', component: QdayComponent},
   {path: 'guid', component: GuidComponent},
   {path: 'withus', component: WithusComponent},
-  
+
+
   
 
 

@@ -27,6 +27,7 @@ import { LanguageSwitcherComponent } from './components/language-switcher/langua
 import { DailyHoroscopeDetailsComponent } from './pages/daily-horoscope-details/daily-horoscope-details.component';
 import { MeetastrologerComponent } from './pages/meetastrologer/meetastrologer.component';
 import { CardComponent } from './components/card/card.component';
+import { DailyHoroscopeComponent } from './components/daily-horoscope/daily-horoscope.component';
 
 
 
@@ -57,6 +58,7 @@ import { CardComponent } from './components/card/card.component';
     DailyHoroscopeDetailsComponent,
     MeetastrologerComponent,
     CardComponent,
+    DailyHoroscopeComponent,
   
 
   ],
