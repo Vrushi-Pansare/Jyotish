@@ -1,1 +1,26 @@
-<p>daily-horoscope works!</p>
+<div class="container">
+    <div class="button-container">
+        <h1>Select Your Sun Sign:</h1>
+        <div class="sign-buttons">
+            <div *ngFor="let sign of signs">
+                <button (click)="selectSign(sign.name)">
+                    <img [src]="sign.image" alt="{{ sign.name }}" class="sign-image">
+                    {{ sign.name }}
+                </button>
+            </div>
+        </div>
+        <hr>
+        
+        <div class="Horoscope">
+        <h2>Horoscopes:</h2>
+        <button (click)="changeType('daily')">Daily Horoscope</button>
+        <button (click)="changeType('weekly')">Weekly Horoscope</button>
+        <button (click)="changeType('monthly')">Monthly Horoscope</button>
+    </div>
+</div>
+
+    <div class="response-container" *ngIf="horoscopeData">
+        <h2>Horoscope for {{ selectedSign }}:</h2>
+        <pre>{{ horoscopeData | json }}</pre> 
+    </div>
+</div>

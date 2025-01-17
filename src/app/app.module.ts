@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { ReactiveFormsModule} from '@angular/forms';
+import { FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './components/header/header.component';
@@ -28,6 +28,7 @@ import { DailyHoroscopeDetailsComponent } from './pages/daily-horoscope-details/
 import { MeetastrologerComponent } from './pages/meetastrologer/meetastrologer.component';
 import { CardComponent } from './components/card/card.component';
 import { DailyHoroscopeComponent } from './components/daily-horoscope/daily-horoscope.component';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -59,13 +60,13 @@ import { DailyHoroscopeComponent } from './components/daily-horoscope/daily-horo
     MeetastrologerComponent,
     CardComponent,
     DailyHoroscopeComponent,
-  
-
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
