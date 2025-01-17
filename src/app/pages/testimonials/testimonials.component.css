@@ -44,6 +44,7 @@
     font-weight: 400;
     line-height: 28px;
     text-align: center;
+    color: rgb(88, 87, 87);
 
 }
 
@@ -86,6 +87,7 @@
     margin-top: 20px;
     font-weight: 200;
     line-height: 20px;
+    color: gray;
     text-align: left;
     text-underline-position: from-font;
     text-decoration-skip-ink: none;
