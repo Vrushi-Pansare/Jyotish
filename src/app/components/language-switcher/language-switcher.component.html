@@ -43,15 +43,14 @@
         </div>
     </div>
 </div> -->
-
 <div class="language-switcher">
     <div class="row">
         <div class="col-md-1">
-            <div class="card">
-                <div class="language-button" (click)="changeLanguage('en')">Sort By</div>
+            <div class="card1">
+                <div class="language-button" (click)="toggleLanguageButtons()"> Sort By</div>
             </div>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10" *ngIf="showLanguageButtons">
             <div class="language-buttons">
                 <button (click)="changeLanguage('en')">English</button>
                 <button (click)="changeLanguage('hi')">Hindi</button>
@@ -65,11 +64,9 @@
             </div>
         </div>
         <div class="col-md-1">
-            <div class="card">
-                <div class="language-button" (click)="changeLanguage('en')">
-                    Filters</div>
+            <div class="card1">
+                <div class="language-button" (click)="changeLanguage('en')">Filters</div>
             </div>
         </div>
     </div>
 </div>
-

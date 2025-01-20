@@ -80,58 +80,50 @@
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
-    .title {
-        padding: 100px 20px; /* Reduce padding for medium screens */
-    }
-
-    .title h1 {
+    .flex-container h1 {
         font-size: 36px; /* Adjust heading size for medium screens */
         line-height: 44px;
     }
 
-    .title p {
+    .flex-container p {
         font-size: 18px; /* Adjust paragraph size for medium screens */
     }
 
     .search-container {
-        width: 50%; /* Make search container responsive */
+        width: 100%; /* Make search container responsive */
         margin-bottom: 10px;
     }
 }
 
 @media (max-width: 768px) {
-    .title {
-        margin-top: 30%;
-        padding: 100px 100px; /* Further reduce padding for small screens */
+    .flex-container {
+        margin-top: 20%; /* Adjust margin for small screens */
     }
 
-    .title h1 {
+    .flex-container h1 {
         font-size: 28px; /* Adjust heading size for small screens */
         line-height: 36px;
     }
 
-    .title p {
+    .flex-container p {
         font-size: 16px; /* Adjust paragraph size for small screens */
     }
 
     .search-container {
-        margin-left: 40px;
         width: 90%; /* Make search container wider on small screens */
         margin-top: 20px; /* Adjust margin for small screens */
     }
 }
 
-@media (max-width: 480px) {
-    .title {
-        padding: 60px 10px; /* Further reduce padding for very small screens */
-    }
+@media (max-width: 425px) {
 
-    .title h1 {
+    .flex-container h1 {
         font-size: 24px; /* Further adjust heading size for very small screens */
         line-height: 32px;
+        margin-top: 20%;
     }
 
-    .title p {
+    .flex-container p {
         font-size: 14px; /* Further adjust paragraph size for very small screens */
     }
 

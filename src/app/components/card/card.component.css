@@ -193,3 +193,66 @@
     background: linear-gradient(90deg, #FFB84D 0%, #FF8C00 100%);
 
 }
+
+@media (max-width: 1024px) {
+    .card-container {
+        flex-direction: row; /* Stack cards vertically */
+        align-items: center; /* Center cards */
+    }
+
+    .card {
+        width: 100%; /* Set card width to 90% for smaller screens */
+        margin: 10px 0; /* Add margin between cards */
+    }
+    .card h3 {
+        font-size: 10px;
+    }
+    .card p {
+        font-size: 8px;
+    }
+
+    .rating {
+        width: auto; /* Allow width to adjust */
+    }
+
+    .details {
+        flex-direction: row; /* Stack details vertically */
+        align-items: flex-start; /* Align items to the start */
+    }
+    .details span {
+        font-size: 9px;
+
+    }
+    .details img {
+        width: 10px;
+        height: 10px;
+    }
+
+    .actions {
+        flex-direction: row; /* Stack actions vertically */
+        align-items: center; /* Center actions */
+    }
+
+    .actions button {
+        font-size: 8px;
+    }
+
+    .main-contaner .button {
+        width: 100%; /* Full width for main button */
+    }
+}
+/* 
+@media (max-width: 768px) {
+    .card-container {
+        justify-content: center; 
+    }
+
+    .card { 
+        margin: 10px; 
+    }
+    .actions button {
+        flex-direction: column;
+    }
+
+
+} */

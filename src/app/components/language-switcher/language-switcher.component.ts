@@ -9,10 +9,15 @@ import { LanguageService } from '../../service/language.service';
   styleUrl: './language-switcher.component.css'
 })
 export class LanguageSwitcherComponent {
-  constructor(private languageService: LanguageService) {}
+ 
+  showLanguageButtons: boolean = false;
 
-  changeLanguage(lang: string) {
-      this.languageService.setLanguage(lang);
+  toggleLanguageButtons() {
+      this.showLanguageButtons = !this.showLanguageButtons;
   }
 
+  changeLanguage(language: string) {
+      // Your logic to change the language
+  }
+  
 }

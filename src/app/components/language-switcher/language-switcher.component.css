@@ -1,16 +1,16 @@
 .language-switcher {
     margin-top: -50px;
-    padding: 30px; /* Add some padding */
+    padding: 30px; 
 }
 
 .language-buttons {
-    display: flex; /* Use flexbox for layout */
-    justify-content: center; /* Center the buttons */
-    align-items: center; /* Center items vertically */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
 }
 
 .language-buttons button {
-    font-family:' Inter', sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px; 
     padding: 10px 15px;
     margin: 0 10px; 
@@ -23,21 +23,44 @@
 
 .language-buttons button:hover {
     background: linear-gradient(90deg, rgba(250, 204, 21, 0.1) 0%, rgba(249, 115, 22, 0.1) 100%);
-
 }
 
 .language-button {
-    font-family:' Inter', sans-serif;
-    font-size: 16px; /* Set font size for Sort By and Filters */
-    cursor: pointer; /* Pointer cursor on hover */
-    padding: 5px; /* Padding for Sort By and Filters */
-    text-align: center; /* Center text */
-    border: 1px solid #ccc; /* Border for Sort By and Filters */
-    border-radius: 5px; /* Rounded corners */
-    background-color: #f8f9fa; /* Light background */
-    transition: background-color 0.3s; /* Transition for hover effect */
+    font-family: 'Inter', sans-serif;
+    font-size: 16px; 
+    cursor: pointer; 
+    padding: 5px; 
+    text-align: center; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    background-color: #f8f9fa; 
+    transition: background-color 0.3s; 
 }
 
 .language-button:hover {
     background: linear-gradient(90deg, rgba(250, 204, 21, 0.1) 0%, rgba(249, 115, 22, 0.1) 100%);
+}
+
+
+/* Media query for mobile screens */
+@media (max-width: 768px) {
+    .language-buttons {
+        display: block; /* Hide buttons by default */
+    }
+
+    .language-buttons.show {
+        display: flex; /* Show buttons when toggled */
+        flex-direction: row; /* Ensure buttons are in a row */
+        justify-content: center; /* Center the buttons */
+        flex-wrap: wrap; /* Allow wrapping if needed */
+    }
+
+    .language-buttons button {
+        width: auto; /* Allow buttons to size based on content */
+        margin: 5px; /* Add some margin between buttons */
+    }
+
+    .language-button {
+        margin-bottom: 10px; /* Add gap between Sort By and Filters */
+    }
 }

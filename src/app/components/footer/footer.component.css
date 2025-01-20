@@ -156,6 +156,19 @@
     .bttn .btn {
         width: 40%; /* Adjust button width for medium screens */
     }
+    .subscribe-container {
+        flex-direction: column; /* Stack items vertically */
+        align-items: stretch; /* Stretch items to full width */
+    }
+
+    .subscribe-container input {
+        width: 100%; /* Full width for input */
+        margin-bottom: 10px; /* Space below input */
+    }
+
+    .subscribe-container .btn {
+        width: 100%; /* Full width for button */
+    }
 }
 
 @media (max-width: 768px) {

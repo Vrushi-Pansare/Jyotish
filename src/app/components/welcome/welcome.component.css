@@ -323,48 +323,17 @@
 }
 
 
-@media (max-width: 329px) {
-  .navbar .menu {
-    font-size: 0.8rem; /* Smaller font size for very small screens */
-  }
-
-  .navbar .menu a {
-    text-align: left;
-    margin: 0 5px; /* Reduce margin for menu items */
-  }
-
-  .navbar .login-btn {
-    width: 40%; /* Full width for login button */
-    font-size: 14px; /* Smaller font size */
-  }
-
-  .hero h3 {
-    font-size: 2rem; /* Further reduce font size */
-  }
-
-  .the-text {
-    font-size: 2rem; 
-    margin-right: 10px;
-  }
-  .jyotish-connect {
-    font-size: 2rem; /* Further reduce font size */
-  }
-
-  .hero p {
-    font-size: 0.6rem; /* Smaller font size for paragraph */
-  }
-
+@media (max-width: 375px) {
   .btn-g {
-    font-size: 10px;
-    width: 100%;
     flex-direction: column; /* Stack buttons vertically */
     gap: 5px; /* Reduce gap between buttons */
     align-items: center;
   }
 
-  .main-container .batt,
+  .main-container .batt {
+    width: 80%; 
+  }
   .main-container .btn-p {
-    
-    width: 100%; /* Increase width on very small screens */
+    width: 80%; /* Increase width on very small screens */
   }
 }

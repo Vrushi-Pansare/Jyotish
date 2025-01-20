@@ -11,12 +11,12 @@
 
 }
 
-/* .navbar {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
 
-} */
+}
 
 .navbar .logo {
     display: flex;
@@ -92,60 +92,44 @@
     margin: 4px 0;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
-    .navbar .menu a {
-        font-size: 12px;
-        /* Adjust font size for medium screens */
-    }
-
-    .navbar .login-btn {
-        font-size: 12px;
-        /* Adjust font size for medium screens */
-    }
-}
-
-@media (max-width: 768px) {
     .navbar {
-        height: 12%;
-        /* Increase height for small screens */
-    }
-
-    .navbar .logo img {
-        height: 30px;
-        /* Reduce logo size for small screens */
+        padding: 5px 10px;
+        /* Adjust padding for smaller screens */
     }
 
     .navbar .menu {
-        display: none;
-        margin-left: -20px;
-        /* Hide menu for small screens */
+
+        /* Background color for dropdown */
+        padding: 10px 0;
+        /* Padding for dropdown */
+    }
+
+
+}
+
+
+@media (max-width: 768px) {
+    .navbar .menu {
+        display: none; /* Hide the menu by default */
+        flex-direction: column; /* Stack menu items vertically */
+        position: absolute; /* Position it absolutely */
+        top: 60px; /* Adjust based on your navbar height */
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, 0.8); /* Background color for the dropdown */
+        z-index: 999; /* Ensure it appears above other content */
+    }
+
+    .navbar .menu.active {
+        display: flex; /* Show the menu when active */
     }
 
     .navbar .hamburger {
-        display: flex;
-        /* Show hamburger menu for small screens */
+        display: flex; /* Show the hamburger icon */
     }
 
-    .navbar .login-btn {
-        font-size: 12px;
-        /* Adjust font size for small screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .navbar {
-        height: 15%;
-        /* Increase height for very small screens */
-    }
-
-    .navbar .logo img {
-        height: 20px;
-        /* Further reduce logo size for very small screens */
-    }
-
-    .navbar .login-btn {
-        font-size: 10px;
-        /* Further adjust font size for very small screens */
+    .navbar .hamburger div {
+        background-color: white; /* Hamburger lines color */
     }
 }

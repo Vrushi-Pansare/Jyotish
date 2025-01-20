@@ -8,17 +8,16 @@ import { Component } from '@angular/core';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-  menuActive = false;
-  // breadcrumb = 'Home';
-  // content = '';
+  menuActive: boolean = false;
+
 
   toggleMenu() {
     this.menuActive = !this.menuActive;
   }
 
-  showContent(page: string) {
+  showContent(content: string) {
     // this.breadcrumb = `Home > ${page}`;
-    this.menuActive = false; // Close the menu after selection
+    console.log(content); // Close the menu after selection
   }
 
 }
