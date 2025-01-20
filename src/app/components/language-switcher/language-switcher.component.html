@@ -1,15 +1,75 @@
-<div class="language-switcher" style="display: flex;">
-    <button (click)="changeLanguage('en')">Sort By</button>
-    <button (click)="changeLanguage('en')">English</button>
-    <button (click)="changeLanguage('es')">Hindi</button>
-    <button (click)="changeLanguage('fr')">Bengali</button>
-    <button (click)="changeLanguage('en')">Gujarati</button>
-    <button (click)="changeLanguage('es')">Kannada</button>
-    <button (click)="changeLanguage('fr')">Malayalam</button>
-    <button (click)="changeLanguage('fr')">Marathi</button>
-    <button (click)="changeLanguage('fr')">Punjabi</button>
-    <button (click)="changeLanguage('fr')">Tamil</button>
-    <button (click)="changeLanguage('fr')">Filters</button>
+<!-- 
+<div class="language-switcher">
+    <div class="row">
+        <div class="col-md-1">
+            <div class="card1">
+                <button (click)="changeLanguage('en')">Sort By</button>
+            </div>    
+        </div>
+        <div class="col-md-1">
+            <button (click)="changeLanguage('en')">English</button>
+        </div>
+        <div class="col-md-1">
+            <button (click)="changeLanguage('en')">Hindi</button>
+        </div>
+        <div class="col-md-1">
+            <button (click)="changeLanguage('en')">Bengali</button>
+        </div>
+        <div class="col-md-1">
+            <button (click)="changeLanguage('en')">Gujarati</button>
+        </div>
+        <div class="col-md-1">
+            <button (click)="changeLanguage('en')">Kannada</button>
+        </div>
+        <div class="col-md-1">
+            <div class="card1">
+                <button (click)="changeLanguage('en')">Malayalam</button>
+            </div>
+          
+        </div>
+        <div class="col-md-1">
+            <button (click)="changeLanguage('en')">Marathi</button>
+        </div>
+        <div class="col-md-1">
+            <button (click)="changeLanguage('en')">Punjabi</button>
+        </div>
+        <div class="col-md-1">
+            <button (click)="changeLanguage('en')">Tamil</button>
+        </div>
+        <div class="col-md-1">
+            <div class="card1">
+                <button (click)="changeLanguage('en')">Filters</button>
+            </div>
+        </div>
+    </div>
+</div> -->
 
-    <!-- Add more languages as needed -->
+<div class="language-switcher">
+    <div class="row">
+        <div class="col-md-1">
+            <div class="card">
+                <div class="language-button" (click)="changeLanguage('en')">Sort By</div>
+            </div>
+        </div>
+        <div class="col-md-10">
+            <div class="language-buttons">
+                <button (click)="changeLanguage('en')">English</button>
+                <button (click)="changeLanguage('hi')">Hindi</button>
+                <button (click)="changeLanguage('bn')">Bengali</button>
+                <button (click)="changeLanguage('gu')">Gujarati</button>
+                <button (click)="changeLanguage('kn')">Kannada</button>
+                <button (click)="changeLanguage('ml')">Malayalam</button>
+                <button (click)="changeLanguage('mr')">Marathi</button>
+                <button (click)="changeLanguage('pa')">Punjabi</button>
+                <button (click)="changeLanguage('ta')">Tamil</button>
+            </div>
+        </div>
+        <div class="col-md-1">
+            <div class="card">
+                <div class="language-button" (click)="changeLanguage('en')">
+                    Filters</div>
+            </div>
+        </div>
+    </div>
 </div>
+

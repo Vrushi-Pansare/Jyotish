@@ -11,13 +11,11 @@
 
 .header h1 {
     font-family: 'Inter', sans-serif;
-    font-size:40px;
+    font-size: 35px;
     font-weight: 400;
-    line-height: 1.5;
+    line-height: 58.51px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    color: #1E3A8A;
+    color: rgba(30, 58, 138, 1);
 
 }
 

@@ -28,21 +28,20 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 10px;
+  padding: 20px 20px;
   flex-wrap: nowrap;
   margin-bottom: 8%;
-  max-width: 100%; /* Ensure navbar does not exceed viewport */
-  overflow: hidden;
+  margin-top: -10px;
 }
 
 .navbar .logo {
   display: flex;
   align-items: center;
-  opacity: 1;
+  opacity: 1.5;
 }
 
 .navbar .logo img {
-  height: 40px;
+  height: 35px;
   width: auto;
 }
 
@@ -57,36 +56,34 @@
   color: white;
   text-decoration: none;
   margin: 0 15px;
-  font-size: 1rem;
-  ;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
   white-space: nowrap;
+  letter-spacing: normal;
 }
 
-.navbar .menu a:hover {
+/* .navbar .menu a:hover {
   text-decoration: underline;
-}
+} */
 
 .navbar .login-btn {
   background: linear-gradient(90deg, #FFB84D 0%, #FF8C00 100%);
-  color: rgb(6, 6, 6);
-  Width: 90px;
-  Height: 30px;
   border: none;
-  padding: 10px 15px;
-  border-radius: 1000px;
-  font-size: 16px;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  text-align: center;
+  padding: 5px 20px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 300;
+  line-height: 16px;
+  font-family: 'Inter', sans-serif;
 }
 
 .navbar .login-btn img {
   width: 24px;
   height: auto;
-  padding: 2px 4px 2px 4px;
+  padding: 2px 4px;
   gap: 0px;
-  opacity: 0px;
+  opacity: 1;
 
 }
 

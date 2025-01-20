@@ -15,37 +15,38 @@
     margin-top: 20px;
 }
 
-.main-content {
-    padding: 50px;
-    justify-content: center;
-    /* Center horizontally */
-    align-items: center;
-    text-align: center;
-    margin-top: 50px;
+
+.flex-container {
+    display: flex; /* Make the container a flex container */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    border: none;
+    margin-top: 100px;
 }
 
-.main-content h1 {
+.row {
+    width: 100%; /* Ensure rows take full width */
+    display: flex; /* Make the row a flex container */
+    justify-content: center; /* Center content horizontally */
+}
 
+.flex-container h1 {
     font-family: 'Inter', sans-serif;
     font-size: 40px;
     font-weight: 400;
     line-height: 58.51px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: rgba(30, 58, 138, 1);
-    margin-bottom: 20px;
 }
 
-.main-content p {
-
+.flex-container p{
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 28px;
+    line-height: 20px;
     text-align: center;
     color: rgb(88, 87, 87);
-
 }
 
 .section .card-container {

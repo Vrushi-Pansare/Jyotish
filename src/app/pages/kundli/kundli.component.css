@@ -4,33 +4,40 @@
     margin: 0;
 }
 
-.main {
+.flex-container {
+    display: flex; /* Make the container a flex container */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    border: none;
     margin-top: 100px;
-    text-align: center;
-    padding: 50px;
+    margin-bottom: 50px;
 }
 
-.main h1 {
+.row {
+    width: 100%; /* Ensure rows take full width */
+    display: flex; /* Make the row a flex container */
+    justify-content: center; /* Center content horizontally */
+}
+
+.flex-container h1 {
     font-family: 'Inter', sans-serif;
     font-size: 40px;
     font-weight: 400;
     line-height: 58.51px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
     color: rgba(30, 58, 138, 1);
-
 }
 
-.main p {
-    
+.flex-container p{
     font-family: 'Inter', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
-    width: 80%;
-    line-height: 28px;
-    margin-left: 100px;
+    line-height: 20px;
+    text-align: center;
+    color: rgb(88, 87, 87);
 }
+
 
 .main-content {
     padding: 50px;

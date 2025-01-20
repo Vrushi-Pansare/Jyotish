@@ -10,7 +10,7 @@
     margin-bottom: 20px;
 }
 
-.button h1 {
+.hedar h1 {
     font-family: Inter, sans-serif;
     font-size: 40px;
     font-weight: 400;
@@ -21,23 +21,16 @@
 
 }
 
-
-.button .btn {
-    width: 20%;
+.btn {
     height: auto;
     padding: 10px 20px;
     border-radius: 1000px;
-    color: rgba(26, 26, 26, 1);
-    opacity: 0px;
-    font-family: Inter, sans-serif;
+    font-family: 'Inter', sans-serif;
     font-size: 16px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 1;
-    margin-top: 20px;
-    margin-left: 100px;
     background: linear-gradient(90deg, #FACC15 0%, #F97316 100%);
 }
-
 
 .card {
     border: white;

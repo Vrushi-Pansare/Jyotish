@@ -167,23 +167,29 @@
 
 }
 
+.button-container {
+    display: flex; /* Make the container a flex container */
+    justify-content: center; /* Center the button horizontally */
+    margin-top: 20px; /* Add some margin on top */
+}
 
-.bttn {
-    width: 20%;
-    height: auto;
-    top: 2290px;
-    left: 868px;
-    padding: 10px 20px;
-    gap: 10px;
+
+
+.main-contaner .button {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    padding: 5px 20px;
+    gap: 0;
     border-radius: 1000px;
     border: 1px;
-    opacity: 0px;
+    opacity: 1;
     border: 1px solid;
     border-color: #F97316;
     margin-top: 10px;
+    background-color: white;
 }
 
-.bttn:hover {
+.main-contaner .button:hover{
     background: linear-gradient(90deg, #FFB84D 0%, #FF8C00 100%);
 
 }

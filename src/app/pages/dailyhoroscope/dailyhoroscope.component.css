@@ -5,35 +5,41 @@
 }
 
 
-.title {
-    padding: 50px;
-    margin-top: 50px;
+.flex-container {
+    display: flex; /* Make the container a flex container */
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center items vertically */
+    align-items: center; /* Center items horizontally */
+    border: none;
+    margin-top: 100px;
+    margin-bottom: 50px;
 }
 
-.title h1 {
-    font-family:' Inter', sans-serif;
+.row {
+    width: 100%; /* Ensure rows take full width */
+    display: flex; /* Make the row a flex container */
+    justify-content: center; /* Center content horizontally */
+}
+
+.flex-container h1 {
+    font-family: 'Inter', sans-serif;
     font-size: 40px;
     font-weight: 400;
     line-height: 58.51px;
     text-align: center;
     color: rgba(30, 58, 138, 1);
-
 }
 
-.title p {
-
+.flex-container p{
     font-family: 'Inter', sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
-    line-height: 28px;
-    width: 80%;
-    margin-left: 100px;
+    line-height: 20px;
     text-align: center;
-    text-underline-position: from-font;
-    text-decoration-skip-ink: none;
-    margin-bottom: 40px;
-
+    color: rgb(88, 87, 87);
 }
+
+
 
 .card-container {
     padding: 50px;
@@ -87,6 +93,7 @@
     padding: 10px;
     text-align: left;
     margin-bottom: -20px;
+    color: gray;
 }
 
 .card .batt {
