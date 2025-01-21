@@ -45,14 +45,14 @@
     color: rgb(88, 87, 87);
 }
 
-.section .card-container {
-    padding: 50px;
+.card-container {
+    padding: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
 
-.section .card {
+.card {
     padding: 10px;
     width: 100%;
     height: auto;
@@ -62,7 +62,7 @@
     margin: 10px;
 }
 
-.section .card img {
+.card img {
     width: 56.27px;
     height: 37.13px;
     top: 3772px;
@@ -73,7 +73,7 @@
     margin-top: 20px;
 }
 
-.section .card p {
+.card p {
 
     font-family: 'Inter', sans-serif;
     font-size: 16px;
@@ -87,8 +87,12 @@
     margin-bottom: 50px;
 }
 
+.card-image {
+    display: flex;
+    gap: 10px;
+}
 
-.section .cardimage img {
+.card-image img {
     width: 48px;
     height: 48px;
     top: 4018px;
@@ -97,23 +101,36 @@
     opacity: 0px;
 }
 
-.section .cardimage p {
+.card-image p {
     margin-top: 30px;
-
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     color: #1E3A8A;
 
 }
 
-.section .cardimage span img {
-    width: 80px;
-    height: 12px;
-    gap: 0px;
-    margin-top: 30px;
-    margin-left: 40px;
+.user-icon img {
+    width: 50px;
+    height: 10px;
+    margin-top: 35px
 }
 
+.bttn {
+    margin-top: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    border-radius: 100px;
+    border: 1px solid;
+    padding: 10px 40px;
+    gap: 10px;
+    opacity: 1;
+    border-color: orange;
+    background-color: white;
+}
+
+.bttn:hover {
+    background: linear-gradient(90deg, #FACC15 0%, #F97316 100%);
+}
 
 .pages {
     padding: 0px;
@@ -138,9 +155,8 @@
         /* Further adjust heading size for small screens */
     }
 
-    .section .card {
-        max-width: 100%;
-        /* Full width for cards on small screens */
+    .card-image p {
+        font-size: 11px;
     }
 
 }
@@ -152,8 +168,7 @@
         /* Further adjust heading size for very small screens */
     }
 
-    .section .cardimage span img {
-        width: 50px;
-        /* Further adjust image size for very small screens */
+    .card-image p {
+        font-size: 16px;
     }
 }

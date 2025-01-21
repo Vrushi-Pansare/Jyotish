@@ -110,6 +110,10 @@
 
 
 @media (max-width: 768px) {
+    .navbar {
+        padding: 3px 6px;
+        /* Adjust padding for smaller screens */
+    }
     .navbar .menu {
         display: none; /* Hide the menu by default */
         flex-direction: column; /* Stack menu items vertically */

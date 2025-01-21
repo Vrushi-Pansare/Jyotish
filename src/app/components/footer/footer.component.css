@@ -2,7 +2,9 @@
     width: 100%;
     height: auto;
     padding: 5%;
-    background-image: url('../../../assets/footer/Untitled.png');
+    background-image: url('../../../assets/footer/Footer\ \(4\).png');
+    background-size: cover;
+    background-position: center;
 }
 
 .row {
