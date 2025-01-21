@@ -150,15 +150,13 @@
 
 .btn-g a {
   text-decoration: none;
-  /* Remove underline */
+ 
 }
 
 .main-container .batt {
   background-color: transparent;
   color: orange;
   border-color: orange;
-  width: 20%;
-  /* height: auto; */
   border: 2px solid #ff9900;
   padding: 10px 20px;
   border-radius: 1000px;
@@ -167,14 +165,13 @@
   font-weight: 500;
   line-height: 29.26px;
   text-align: center;
-  /* Center text */
+  
 }
 
 .main-container .btn-p {
   background-color: orange;
   color: black;
   border: 2px solid orange;
-  width: 20%;
   padding: 10px 20px;
   border-radius: 1000px;
   opacity: 1;
@@ -187,24 +184,24 @@
 
 .main-container .batt,
 .main-container .btn-p {
-    width: 20%; /* Ensure buttons do not exceed width */
-    max-width: 100%; /* Prevent overflow */
+    width: 20%; 
+    max-width: 100%; 
 }
 @media (max-width: 1100px){
   
   .btn-g {
     flex-direction: row;
-    /* Stack buttons vertically on smaller screens */
+    
     gap: 10px;
-    /* Reduce gap between buttons */
+    
   }
 
   .main-container .batt,
   .main-container .btn-p {
     width: 30%;
-    /* Increase width on smaller screens */
+    
     max-width: none;
-    /* Remove max-width for smaller screens */
+    
   }
 
 }
@@ -219,8 +216,10 @@
     text-align: left;
     top: 60px;
     background-color: black;
-    /* background: linear-gradient(90deg, #FFB84D 0%, #FF8C00 100%); */
     width: 100%;
+  }
+  .navbar .menu a {
+    line-height: 2.5;
   }
 
   .navbar .menu.active {
@@ -239,94 +238,88 @@
   }
 
   .navbar .login-btn {
-    width: 15%;
+    width: 25%;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .hero h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     /* Adjust font size for mobile */
   }
 
   .the-text,
   .jyotish-connect {
-    font-size: 2.5rem;
+    font-size: 2rem;
     /* Adjust font size for mobile */
   }
 
   .hero .p {
-    font-size: 1rem;
+    font-size: 10px;
     /* Adjust font size for mobile */
   }
 
   .btn-g {
     flex-direction: row;
-    /* Stack buttons vertically on smaller screens */
     gap: 10px;
-    /* Reduce gap between buttons */
+    width: 100%;
   }
 
   .main-container .batt,
   .main-container .btn-p {
-    width: 40%;
-    /* Increase width on smaller screens */
-    max-width: none;
     font-size: 12px;
-    /* Remove max-width for smaller screens */
+    width: 80%; /* Full width for buttons on mobile */
   }
 }
 
 
-@media (max-width: 320px) {
-  .navbar .menu {
-    font-size: 0.8rem; /* Smaller font size for very small screens */
-  }
-
-  .navbar .menu a {
-    text-align: left;
-    margin: 0 5px; /* Reduce margin for menu items */
-  }
-
-  .navbar .login-btn {
-    width: 40%; /* Full width for login button */
-    font-size: 14px; /* Smaller font size */
-  }
-
+@media (max-width: 425px) {
+  
   .hero h3 {
-    font-size: 1.5rem; /* Further reduce font size */
+    font-size: 1.5rem; 
   }
 
   .the-text {
-    font-size: 1.5; 
+    font-size: 1.5rem; 
     margin-right: 10px;
   }
   .jyotish-connect {
-    font-size: 1.5rem; /* Further reduce font size */
+    font-size: 1.5rem; 
   }
 
   .hero p {
-    font-size: 0.6rem; /* Smaller font size for paragraph */
+    font-size: 0.6rem;
   }
-
   .btn-g {
-    width: 100%;
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 5px; /* Reduce gap between buttons */
+    flex-direction: column; 
+    gap: 5px; 
     align-items: center;
   }
 
   .main-container .batt,
   .main-container .btn-p {
-    
-    width: 50%; /* Increase width on very small screens */
+    width: 80%; 
   }
 }
 
+@media (min-width: 426px) and (max-width: 768px) {
+  .btn-g {
+    flex-direction: row; /* Keep buttons in a row */
+    gap: 10px; 
+    justify-content: center; /* Center the buttons */
+  }
 
+  .main-container .batt,
+  .main-container .btn-p {
+    width: 30%; /* Adjust width for better spacing */
+  }
+}
+
+/* 
 @media (max-width: 375px) {
   .btn-g {
-    flex-direction: column; /* Stack buttons vertically */
-    gap: 5px; /* Reduce gap between buttons */
+    flex-direction: column; 
+    gap: 5px; 
     align-items: center;
   }
 
@@ -334,6 +327,6 @@
     width: 80%; 
   }
   .main-container .btn-p {
-    width: 80%; /* Increase width on very small screens */
+    width: 80%;
   }
-}
+} */

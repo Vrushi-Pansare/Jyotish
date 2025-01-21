@@ -26,7 +26,6 @@
 }
 
 .btn {
-    height: auto;
     padding: 10px 20px;
     border-radius: 1000px;
     font-family: 'Inter', sans-serif;
@@ -66,79 +65,82 @@
     color: grey;
     font-size: 15px;
 }
-
-
-/* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
     .titel h1 {
-        font-size: 2.5rem; /* Adjust heading size for medium screens */
+        font-size: 2.5rem; 
     }
 
-    .button .btn {
-        width: 30%; /* Adjust button width for medium screens */
-        margin-left: 20px; /* Reduce left margin */
+    .flex-container .btn {
+        width: 50%; 
+        /* margin-left: 20px;  */
     }
 
     .card h3 {
-        font-size: 18px; /* Adjust card heading size for medium screens */
+        font-size: 18px; 
         text-align: center;
     }
 
     .card p {
-        font-size: 14px; /* Adjust card paragraph size for medium screens */
+        font-size: 14px; 
         text-align: center;
     }
 }
 
 @media (max-width: 768px) {
     .titel h1 {
-        font-size: 2rem; /* Adjust heading size for small screens */
+        font-size: 2rem; 
     }
 
-    .button {
-        flex-direction: column; /* Stack buttons vertically */
-        align-items: center; /* Center buttons */
-        gap: 20px; /* Reduce gap between buttons */
+    .flex-container {
+        flex-direction: column; 
+        align-items: center; 
     }
 
-    .button .btn {
-        width: 100%; /* Full width for buttons on small screens */
-        margin-left: 0; /* Remove left margin */
+    .flex-container .btn {
+        width: 80%; 
+        flex-direction: column; 
+        align-items: center; 
+        margin: 10px auto; /* Center the button and add some vertical spacing */
+        max-width: 100px; /* Set a maximum width for the button */
     }
 
     .card {
-        margin-bottom: 10px; /* Ensure 10px gap between cards */
+        margin-bottom: 10px; 
     }
 
     .card h3 {
-        font-size: 16px; /* Adjust card heading size for small screens */
+        font-size: 16px; 
     }
 
     .card p {
-        font-size: 12px; /* Adjust card paragraph size for small screens */
+        font-size: 12px; 
     }
 }
 
-
-@media (max-width: 480px) {
+@media (max-width: 425px) {
     .titel h1 {
-        font-size: 1.5rem;
-        /* Further adjust heading size for very small screens */
+        font-size: 1.2rem;
+    }
+    .flex-container p {
+        font-size: 1rem;
     }
 
+    .flex-container {
+        flex-direction: column; /* Ensure column layout */
+        align-items: center; /* Center items */
+    }
 
-    .button .btn {
-        width: 100%;
-        /* Full width for buttons on very small screens */
+    .flex-container .btn {
+        width: 80%; /* Set a reasonable width for smaller screens */
+        max-width: 100px; /* Optional: Set a maximum width */
+        margin: 20px auto; /* Center the button and add some vertical spacing */
     }
 
     .card h3 {
         font-size: 12px;
-        /* Further adjust card heading size */
     }
 
     .card p {
         font-size: 10px;
-        /* Further adjust card paragraph size */
     }
 }

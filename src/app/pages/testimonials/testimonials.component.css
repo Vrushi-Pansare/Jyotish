@@ -4,31 +4,27 @@
     padding: 0;
     margin: 0;
     display: flex;
-    /* Use flexbox for centering */
     flex-direction: column;
-    /* Stack items vertically */
     justify-content: center;
-    /* Center horizontally */
     align-items: center;
-    /* Center vertically */
     text-align: center;
     margin-top: 20px;
 }
 
 
 .flex-container {
-    display: flex; /* Make the container a flex container */
-    flex-direction: column; /* Stack items vertically */
-    justify-content: center; /* Center items vertically */
-    align-items: center; /* Center items horizontally */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     border: none;
     margin-top: 100px;
 }
 
 .row {
-    width: 100%; /* Ensure rows take full width */
-    display: flex; /* Make the row a flex container */
-    justify-content: center; /* Center content horizontally */
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .flex-container h1 {
@@ -40,7 +36,7 @@
     color: rgba(30, 58, 138, 1);
 }
 
-.flex-container p{
+.flex-container p {
     font-family: 'Inter', sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -52,11 +48,8 @@
 .section .card-container {
     padding: 50px;
     display: flex;
-    /* Use flexbox for layout */
     flex-wrap: wrap;
-    /* Allow cards to wrap on smaller screens */
     justify-content: center;
-    /* Center cards */
 }
 
 .section .card {
@@ -67,7 +60,6 @@
     opacity: 0px;
     box-shadow: 0px 2px 8px 0px #0000000D;
     margin: 10px;
-    /* Add margin for spacing between cards */
 }
 
 .section .card img {
@@ -128,75 +120,40 @@
     margin: 0px;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
-    .main-content h1 {
-        font-size: 32px;
+    .flex-container h1 {
+        font-size: 30px;
         /* Adjust heading size for medium screens */
     }
 
-    .main-content p {
-        font-size: 16px;
-        /* Adjust paragraph size for medium screens */
-    }
-
     .section .card {
-        width: 250px;
-        /* Adjust card width for medium screens */
+        max-width: 90%;
+        /* Allow cards to take more width on smaller screens */
     }
 }
 
 @media (max-width: 768px) {
-    .main-content {
-        margin-top: 100px;
-        padding: 30px;
-        /* Reduce padding for smaller screens */
-    }
-
-    .main-content h1 {
-        font-size: 28px;
+    .flex-container h1 {
+        font-size: 24px;
         /* Further adjust heading size for small screens */
     }
 
-    .main-content p {
-        font-size: 14px;
-        margin-left: -100px;
-        /* Further adjust paragraph size for small screens */
+    .section .card {
+        max-width: 100%;
+        /* Full width for cards on small screens */
     }
 
-    .section .card {
-        width: 90%;
-        /* Full width for cards on small screens */
-        margin: 10px 10px;
-        /* Maintain margin and add vertical spacing */
-    }
 }
 
 @media (max-width: 480px) {
-    .main-content {
-        padding: 20px;
-        /* Further reduce padding for very small screens */
-    }
-
-    .main-content h1 {
-        font-size: 20px;
-        line-height: 1.5;
+    .flex-container h1 {
         text-align: center;
+        font-size: 18px;
         /* Further adjust heading size for very small screens */
     }
 
-    .main-content p {
-        font-size: 12px;
-        text-align: center;
-        margin-left: -50px;
-        /* Further adjust paragraph size for very small screens */
-    }
-    .section  {
-        margin-left: 60px;
-    }
-    .section .card {
-        width: 95%;
-    
-        /* Full width for cards on very small screens */
+    .section .cardimage span img {
+        width: 50px;
+        /* Further adjust image size for very small screens */
     }
 }

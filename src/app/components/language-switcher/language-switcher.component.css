@@ -42,25 +42,20 @@
 }
 
 
-/* Media query for mobile screens */
 @media (max-width: 768px) {
     .language-buttons {
-        display: block; /* Hide buttons by default */
-    }
-
-    .language-buttons.show {
-        display: flex; /* Show buttons when toggled */
-        flex-direction: row; /* Ensure buttons are in a row */
-        justify-content: center; /* Center the buttons */
-        flex-wrap: wrap; /* Allow wrapping if needed */
+        display: flex; 
+        flex-direction: row;
+        justify-content: center; 
+        flex-wrap: wrap; 
     }
 
     .language-buttons button {
-        width: auto; /* Allow buttons to size based on content */
-        margin: 5px; /* Add some margin between buttons */
+        width: auto; 
+        margin: 5px; 
     }
 
     .language-button {
-        margin-bottom: 10px; /* Add gap between Sort By and Filters */
+        margin-bottom: 10px; 
     }
 }

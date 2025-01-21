@@ -117,19 +117,26 @@
         top: 60px; /* Adjust based on your navbar height */
         left: 0;
         right: 0;
-        background-color: rgba(0, 0, 0, 0.8); /* Background color for the dropdown */
-        z-index: 999; /* Ensure it appears above other content */
+        background-color: rgba(0, 0, 0, 0.8); 
+        z-index: 999;
     }
 
     .navbar .menu.active {
-        display: flex; /* Show the menu when active */
+        display: flex; 
+    }
+    .navbar .menu a {
+        line-height: 2.5;
+
+    }
+    .navbar .login-btn {
+        margin-top: 20px;
     }
 
     .navbar .hamburger {
-        display: flex; /* Show the hamburger icon */
+        display: flex; 
     }
 
     .navbar .hamburger div {
-        background-color: white; /* Hamburger lines color */
+        background-color: white; 
     }
 }

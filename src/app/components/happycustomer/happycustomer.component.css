@@ -120,13 +120,14 @@
     }
 
     .cardimage span img {
-        width: 60px; /* Adjust span image size for small screens */
+        width: 30px; /* Adjust span image size for small screens */
     }
 }
 
 @media (max-width: 480px) {
     .hedar h1 {
-        font-size: 20px; /* Further adjust heading size for very small screens */
+        line-height: 1.5;
+        font-size: 16px; /* Further adjust heading size for very small screens */
     }
 
     .card {
@@ -149,7 +150,7 @@
     }
 
     .cardimage span img {
-        margin-right: 50px;
+        margin-right: 20px;
         width: 40px; /* Further adjust span image size for very small screens */
     }
 }

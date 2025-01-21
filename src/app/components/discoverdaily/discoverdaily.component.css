@@ -3,9 +3,6 @@
     padding: 50px;
 }
 
-.button {
-    gap: 60px;
-}
 
 .hedar h1 {
     font-family: 'Inter', sans-serif;
@@ -114,14 +111,14 @@
 
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
-    .button h1 {
+    .hedar h1 {
         font-size: 30px; /* Adjust heading size for medium screens */
     }
 
-    .button .btn {
-        width: 30%; /* Adjust button width for medium screens */
+    .hedar .btn {
+        width: 50%; /* Adjust button width for medium screens */
         font-size: 16px; /* Adjust font size for medium screens */
-        margin-left: 60px; /* Reduce left margin */
+
     }
 
     .card h3 {
@@ -134,20 +131,21 @@
 }
 
 @media (max-width: 768px) {
-    .button {
+    .hedar {
         flex-direction: column; /* Stack buttons vertically */
-        align-items: left; /* Center buttons */
+        align-items: center; /* Center buttons */
         gap: 30px; /* Reduce gap between buttons */
     }
 
-    .button h1 {
-        font-size: 0.5rem; /* Adjust heading size for small screens */
+    .hedar h1 {
+        font-size: 20px; /* Adjust heading size for small screens */
     }
 
-    .button .btn {
+    .hedar .btn {
         font-size: 16px;
-        width: 100px; /* Full width for buttons on small screens */
-        margin-left: 60px; /* Remove left margin */
+        width: 80%;
+        max-width: 100px;
+        margin: 10px auto; /* Center the button and add some vertical spacing */
     }
     .card {
         margin: 10px;
@@ -163,11 +161,12 @@
 }
 
 @media (max-width: 480px) {
-    .button h1 {
-        font-size: 20px; /* Further adjust heading size for very small screens */
+    .hedar h1 {
+        line-height: 1.5;
+        font-size: 16px; /* Further adjust heading size for very small screens */
     }
 
-    .button .btn {
+    .hedar .btn {
         width: 100%; /* Full width for buttons on very small screens */
         padding: 10px; 
     }

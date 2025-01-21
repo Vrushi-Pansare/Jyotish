@@ -168,7 +168,7 @@
 /* Media Queries for Responsiveness */
 @media (max-width: 1024px) {
     .header h1 {
-        font-size: 36px; /* Adjust heading size for medium screens */
+        font-size: 30px; /* Adjust heading size for medium screens */
         line-height: 44px;
         margin-top: 40px;
     }
@@ -186,13 +186,12 @@
 
 @media (max-width: 768px) {
     .header {
-        padding: 30px; /* Reduce padding for smaller screens */
+        padding: 20px; /* Reduce padding for smaller screens */
     }
 
     .header h1 {
-        font-size: 30px; /* Adjust heading size for small screens */
+        font-size: 20px; /* Adjust heading size for small screens */
         line-height: 1.5;
-        margin-top: 50px;
     }
 
     .card-container {
@@ -209,26 +208,9 @@
         font-size: 14px; /* Adjust paragraph size for small screens */
         line-height: 20px;
     }
-}
-
-@media (max-width: 480px) {
-    .header h1 {
-        font-size: 28px; /* Further adjust heading size for very small screens */
-        line-height: 36px;
-    }
-
-    .card-container h2 {
-        font-size: 22px; /* Further adjust card heading size for very small screens */
-        line-height: 28px;
-    }
-
-    .card-container p {
-        font-size: 12px; /* Further adjust paragraph size for very small screens */
-        line-height: 18px;
-    }
-
     .main h6 {
-        font-size: 30px; /* Adjust h6 size for very small screens */
+        line-height: 1.5;
+        font-size: 20px; /* Adjust h6 size for very small screens */
     }
 
     .main h1 {
@@ -237,5 +219,36 @@
 
     .main p {
         font-size: 16px; /* Adjust paragraph size for very small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 20px; /* Further adjust heading size for very small screens */
+        line-height: 1.5;
+        margin-bottom: -50px;
+    }
+
+    .card-container h2 {
+        font-size: 18px; /* Further adjust card heading size for very small screens */
+        line-height: 1.5;
+    }
+
+    .card-container p {
+        font-size: 12px; /* Further adjust paragraph size for very small screens */
+        line-height: 1.5;
+    }
+
+    .main h6 {
+        line-height: 1.5;
+        font-size: 18px; /* Adjust h6 size for very small screens */
+    }
+
+    .main h1 {
+        font-size: 16px; /* Adjust h1 size for very small screens */
+    }
+
+    .main p {
+        font-size: 12px; /* Adjust paragraph size for very small screens */
     }
 }

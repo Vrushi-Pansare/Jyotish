@@ -15,7 +15,4 @@ export class LoginComponent {
     this.router.navigate(['/welcome']); // Navigate to the home route
   }
   
-
-  
- 
 }

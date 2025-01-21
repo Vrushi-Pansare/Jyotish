@@ -2,6 +2,7 @@
     width: 100%;
     height: auto;
     padding: 50px;
+    margin-top: -70px;
 }
 
 .hedar h1 {
@@ -62,4 +63,63 @@ text-align: center;
 text-underline-position: from-font;
 text-decoration-skip-ink: none;
 
+}
+
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .hedar h1 {
+        font-size: 30px; /* Adjust heading size for medium screens */
+    }
+
+    .card h3 {
+        font-size: 24px; /* Adjust card heading size for medium screens */
+    }
+
+    .card p {
+        font-size: 14px; /* Adjust card paragraph size for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .hedar h1 {
+        line-height: 1.5;
+        font-size: 22px; /* Adjust heading size for small screens */
+    }
+
+    .card {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+    .card img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .card h3 {
+        line-height: 1.5;
+        font-size: 16px; /* Adjust card heading size for small screens */
+    }
+
+    .card p {
+        line-height: 1.5;
+        font-size: 12px; /* Adjust card paragraph size for small screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .hedar h1 {
+        font-size: 16px; /* Further adjust heading size for very small screens */
+    }
+
+    .card {
+        padding: 10px; /* Further reduce padding for very small screens */
+    }
+
+    .card h3 {
+        font-size: 16px; /* Further adjust card heading size for very small screens */
+    }
+
+    .card p {
+        font-size: 10px; /* Further adjust card paragraph size for very small screens */
+    }
 }

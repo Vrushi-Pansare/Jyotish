@@ -133,13 +133,17 @@
         /* Reduce padding for smaller screens */
     }
 
-    .title h1 {
-        font-size: 32px;
+    
+.flex-container h1{
+        font-size: 30px;
+        line-height: 1.5;
         /* Adjust heading size for small screens */
     }
 
-    .title p {
-        font-size: 16px;
+    
+.flex-container  p {
+    line-height: 1.5;
+        font-size: 10px;
         /* Adjust paragraph size for small screens */
     }
 
@@ -152,18 +156,19 @@
 }
 
 @media (max-width: 480px) {
-    .title {
+    .flex-container {
         padding: 20px;
         /* Further reduce padding for very small screens */
     }
 
-    .title h1 {
-        font-size: 24px;
+    .flex-container h1 {
+        font-size: 20px;
         /* Further adjust heading size for very small screens */
     }
 
-    .title p {
-        font-size: 14px;
+    .flex-container  p {
+        font-size: 16px;
+        margin-bottom: -50px;
         /* Further adjust paragraph size for very small screens */
     }
 

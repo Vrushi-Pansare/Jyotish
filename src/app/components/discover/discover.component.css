@@ -139,7 +139,7 @@
     }
 
     .bttn .btn {
-        width: 50%; /* Full width for buttons on small screens */
+        width: 80%; /* Full width for buttons on small screens */
         margin-left: 0; /* Remove left margin */
     }
 }
