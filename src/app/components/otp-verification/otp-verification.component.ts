@@ -8,5 +8,6 @@ import { Component } from '@angular/core';
   styleUrl: './otp-verification.component.css'
 })
 export class OtpVerificationComponent {
+ 
 
 }

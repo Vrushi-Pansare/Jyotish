@@ -423,6 +423,36 @@
         font-size: 14px; /* Further adjust button font size for small screens */
         padding: 8px 16px; /* Adjust padding for small screens */
     }
+    .form-container .name,
+    .form-container .date {
+        margin-bottom: 10px;
+        flex-direction: column; /* Stack items vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .form-container .name div,
+    .form-container .date div {
+        width: 100%; /* Make each input take full width */
+        margin-bottom: 10px; /* Add some space between fields */
+    }
+
+    .form-container .name input,
+    .form-container .brith input,
+    .form-container .date input,
+    .form-container .time input {
+        width: 100%; /* Make inputs full width */
+    }
+
+    .main-container label {
+        display: flex; /* Use flexbox for gender options */
+        flex-direction: row; /* Stack gender options vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+
+    .main-container label input {
+        width: auto; /* Reset width for buttons */
+        margin-bottom: 10px; /* Add space between buttons */
+    }
 }
 
 @media (max-width: 480px) {
